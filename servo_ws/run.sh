@@ -1,0 +1,1 @@
+exec ros2 run servo_control servo_control &
