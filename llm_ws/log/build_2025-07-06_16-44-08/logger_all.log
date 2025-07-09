@@ -1,0 +1,161 @@
+[0.656s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.657s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffaae81450>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffab01f1f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffab01f1f0>>)
+[1.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.800s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sunrise/jianye_dev/llm_ws'
+[1.800s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.801s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.801s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.802s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.802s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.802s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.802s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.802s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.874s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.875s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.875s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.876s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[1.876s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[1.880s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.880s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.883s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.883s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.883s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.883s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/tts_receive) by extensions ['ignore', 'ignore_ament_install']
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/tts_receive) by extension 'ignore'
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/tts_receive) by extension 'ignore_ament_install'
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/tts_receive) by extensions ['colcon_pkg']
+[1.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/tts_receive) by extension 'colcon_pkg'
+[1.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/tts_receive) by extensions ['colcon_meta']
+[1.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/tts_receive) by extension 'colcon_meta'
+[1.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/tts_receive) by extensions ['ros']
+[1.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/tts_receive) by extension 'ros'
+[1.903s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tts_receive' with type 'ros.ament_python' and name 'tts_receive'
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extensions ['ignore', 'ignore_ament_install']
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extension 'ignore'
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extension 'ignore_ament_install'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extensions ['colcon_pkg']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extension 'colcon_pkg'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extensions ['colcon_meta']
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extension 'colcon_meta'
+[1.906s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extensions ['ros']
+[1.906s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extension 'ros'
+[1.906s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extensions ['cmake', 'python']
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extension 'cmake'
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extension 'python'
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extensions ['python_setup_py']
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(tts_audio) by extension 'python_setup_py'
+[1.908s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.908s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.908s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.908s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.908s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.033s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.034s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.039s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/sunrise/jianye_dev/llm_ws/install/rdk_llm' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.043s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/sunrise/jianye_dev/llm_ws/install/rdk_llm' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.048s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/sunrise/jianye_dev/llm_ws/install
+[2.050s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/sunrise/jianye_dev/rplidar_ws/install
+[2.055s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /userdata/dev_ws/install
+[2.058s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 54 installed packages in /opt/tros/humble
+[2.144s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 261 installed packages in /opt/ros/humble
+[2.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.430s] Level 5:colcon.colcon_core.verb:set package 'tts_receive' build argument 'cmake_args' from command line to 'None'
+[2.431s] Level 5:colcon.colcon_core.verb:set package 'tts_receive' build argument 'cmake_target' from command line to 'None'
+[2.431s] Level 5:colcon.colcon_core.verb:set package 'tts_receive' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.431s] Level 5:colcon.colcon_core.verb:set package 'tts_receive' build argument 'cmake_clean_cache' from command line to 'False'
+[2.431s] Level 5:colcon.colcon_core.verb:set package 'tts_receive' build argument 'cmake_clean_first' from command line to 'False'
+[2.431s] Level 5:colcon.colcon_core.verb:set package 'tts_receive' build argument 'cmake_force_configure' from command line to 'False'
+[2.431s] Level 5:colcon.colcon_core.verb:set package 'tts_receive' build argument 'ament_cmake_args' from command line to 'None'
+[2.432s] Level 5:colcon.colcon_core.verb:set package 'tts_receive' build argument 'catkin_cmake_args' from command line to 'None'
+[2.432s] Level 5:colcon.colcon_core.verb:set package 'tts_receive' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.432s] DEBUG:colcon.colcon_core.verb:Building package 'tts_receive' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/jianye_dev/llm_ws/build/tts_receive', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/jianye_dev/llm_ws/install/tts_receive', 'merge_install': False, 'path': '/home/sunrise/jianye_dev/llm_ws/src/tts_receive', 'symlink_install': False, 'test_result_base': None}
+[2.433s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.438s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.439s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sunrise/jianye_dev/llm_ws/src/tts_receive' with build type 'ament_python'
+[2.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('tts_receive', 'ament_prefix_path')
+[2.451s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/hook/ament_prefix_path.ps1'
+[2.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/hook/ament_prefix_path.dsv'
+[2.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/hook/ament_prefix_path.sh'
+[2.464s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.465s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.306s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sunrise/jianye_dev/llm_ws/src/tts_receive'
+[4.308s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.308s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/jianye_dev/llm_ws/src/tts_receive': PYTHONPATH=/home/sunrise/jianye_dev/llm_ws/build/tts_receive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tts_receive build --build-base /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build install --record /home/sunrise/jianye_dev/llm_ws/build/tts_receive/install.log --single-version-externally-managed install_data
+[8.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/jianye_dev/llm_ws/src/tts_receive' returned '0': PYTHONPATH=/home/sunrise/jianye_dev/llm_ws/build/tts_receive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tts_receive build --build-base /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build install --record /home/sunrise/jianye_dev/llm_ws/build/tts_receive/install.log --single-version-externally-managed install_data
+[8.868s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/llm_ws/install/tts_receive' for CMake module files
+[8.874s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/llm_ws/install/tts_receive' for CMake config files
+[8.880s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib'
+[8.882s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/bin'
+[8.883s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/pkgconfig/tts_receive.pc'
+[8.884s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages'
+[8.884s] Level 1:colcon.colcon_core.shell:create_environment_hook('tts_receive', 'pythonpath')
+[8.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/hook/pythonpath.ps1'
+[8.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/hook/pythonpath.dsv'
+[8.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/hook/pythonpath.sh'
+[8.895s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/bin'
+[8.896s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tts_receive)
+[8.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/package.ps1'
+[8.905s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/package.dsv'
+[8.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/package.sh'
+[8.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/package.bash'
+[8.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive/package.zsh'
+[8.927s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/colcon-core/packages/tts_receive)
+[8.929s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.930s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.930s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.931s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.962s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[8.963s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.963s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.963s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.990s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.992s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/llm_ws/install/local_setup.ps1'
+[9.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/jianye_dev/llm_ws/install/_local_setup_util_ps1.py'
+[9.013s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/llm_ws/install/setup.ps1'
+[9.025s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/llm_ws/install/local_setup.sh'
+[9.029s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/jianye_dev/llm_ws/install/_local_setup_util_sh.py'
+[9.034s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/llm_ws/install/setup.sh'
+[9.045s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/llm_ws/install/local_setup.bash'
+[9.048s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/llm_ws/install/setup.bash'
+[9.058s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/llm_ws/install/local_setup.zsh'
+[9.061s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/llm_ws/install/setup.zsh'

@@ -1,0 +1,132 @@
+[0.796s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.796s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff80f9bca0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff80f9b790>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff80f9b790>>)
+[2.042s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.042s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.042s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.043s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.043s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.043s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.043s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sunrise/jianye_dev/rplidar_ws'
+[2.044s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.044s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.045s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.045s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.045s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.045s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.129s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.130s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.130s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.131s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.131s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.131s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.133s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros-dev-ros2) by extensions ['ignore', 'ignore_ament_install']
+[2.133s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros-dev-ros2) by extension 'ignore'
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros-dev-ros2) by extension 'ignore_ament_install'
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros-dev-ros2) by extensions ['colcon_pkg']
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros-dev-ros2) by extension 'colcon_pkg'
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros-dev-ros2) by extensions ['colcon_meta']
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros-dev-ros2) by extension 'colcon_meta'
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros-dev-ros2) by extensions ['ros']
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros-dev-ros2) by extension 'ros'
+[2.151s] DEBUG:colcon.colcon_core.package_identification:Package 'rplidar_ros-dev-ros2' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[2.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.299s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /userdata/dev_ws/install
+[2.303s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 49 installed packages in /opt/tros/humble
+[2.311s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 206 installed packages in /opt/ros/humble
+[2.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.662s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[2.663s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[2.663s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.663s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[2.663s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[2.663s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[2.664s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[2.664s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[2.664s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.664s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros', 'merge_install': False, 'path': '/home/sunrise/jianye_dev/rplidar_ws/rplidar_ros-dev-ros2', 'symlink_install': True, 'test_result_base': None}
+[2.665s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.670s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.671s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sunrise/jianye_dev/rplidar_ws/rplidar_ros-dev-ros2' with build type 'ament_cmake'
+[2.672s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sunrise/jianye_dev/rplidar_ws/rplidar_ros-dev-ros2'
+[2.688s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.690s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.690s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/jianye_dev/rplidar_ws/rplidar_ros-dev-ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros
+[10.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/jianye_dev/rplidar_ws/rplidar_ros-dev-ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros
+[11.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros -- -j8 -l8
+[72.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros -- -j8 -l8
+[72.567s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros
+[75.007s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[75.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/jianye_dev/rplidar_ws/build/rplidar_ros
+[75.055s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros' for CMake module files
+[75.063s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros' for CMake config files
+[75.067s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[75.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[75.079s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[75.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[75.094s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/lib'
+[75.096s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/bin'
+[75.097s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[75.100s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[75.102s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/bin'
+[75.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[75.111s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[75.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[75.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[75.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[75.134s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[75.138s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[75.139s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros' for CMake module files
+[75.144s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros' for CMake config files
+[75.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[75.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[75.152s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[75.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[75.158s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/lib'
+[75.158s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/bin'
+[75.159s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[75.160s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[75.162s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/bin'
+[75.164s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[75.167s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[75.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[75.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[75.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[75.177s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[75.179s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[75.180s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[75.182s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[75.183s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[75.400s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[75.401s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[75.401s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[75.401s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[75.402s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[75.402s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[75.404s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/rplidar_ws/install/local_setup.ps1'
+[75.411s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/jianye_dev/rplidar_ws/install/_local_setup_util_ps1.py'
+[75.421s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/rplidar_ws/install/setup.ps1'
+[75.432s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/rplidar_ws/install/local_setup.sh'
+[75.437s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/jianye_dev/rplidar_ws/install/_local_setup_util_sh.py'
+[75.441s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/rplidar_ws/install/setup.sh'
+[75.452s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/rplidar_ws/install/local_setup.bash'
+[75.456s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/rplidar_ws/install/setup.bash'
+[75.466s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/rplidar_ws/install/local_setup.zsh'
+[75.471s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/rplidar_ws/install/setup.zsh'

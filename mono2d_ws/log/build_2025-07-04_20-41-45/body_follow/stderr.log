@@ -1,0 +1,17 @@
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:[m[K In member function ‘[01m[Kvoid BodyRoiSubscriber::topic_callback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:68:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   68 |         int [01;35m[Kx2[m[K = x1 + largest_roi.width;
+      |             [01;35m[K^~[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:69:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   69 |         int [01;35m[Ky2[m[K = y1 + largest_roi.height;
+      |             [01;35m[K^~[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:102:53:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_area_area[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_area[m[K’?
+  102 |             double area_ratio = static_cast<double>([01;31m[Ktarget_area_area[m[K) / max_area;
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                                     [32m[Ktarget_area[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:101:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_area[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  101 |             double [01;35m[Ktarget_area[m[K = 350 * 400;  // 期望的框面积大小
+      |                    [01;35m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/body_follow.dir/build.make:76: CMakeFiles/body_follow.dir/src/body_follow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/body_follow.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

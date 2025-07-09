@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target body_follow[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+[100%] [32m[1mLinking CXX executable body_follow[0m
+[100%] Built target body_follow
+-- Install configuration: ""
+-- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/lib/body_follow/body_follow
+-- Set runtime path of "/home/sunrise/jianye_dev/mono2d_ws/install/body_follow/lib/body_follow/body_follow" to ""
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/package_run_dependencies/body_follow
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/parent_prefix_path/body_follow
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/ament_prefix_path.sh
+-- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/path.sh
+-- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/path.dsv
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.bash
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.sh
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.zsh
+-- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.dsv
+-- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/package.dsv
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/packages/body_follow
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/cmake/body_followConfig.cmake
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/cmake/body_followConfig-version.cmake
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/package.xml

@@ -1,0 +1,35 @@
+[35m[1mConsolidate compiler generated dependencies of target body_follow[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:146:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  146 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:12:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   12 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:[m[K In constructor ‘[01m[KBodyRoiSubscriber::BodyRoiSubscriber()[m[K’:
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   16 |         [01;31m[Ksubscription_[m[K = this->create_subscription<ai_msgs::msg::PerceptionTargets>(
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_subscription_t[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcreate_publisher[m[K’?
+   24 |         [01;31m[Kcmd_vel_publisher_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kcreate_publisher[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:[m[K In member function ‘[01m[Kvoid BodyRoiSubscriber::topic_callback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:61:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   61 |         int [01;35m[Kx2[m[K = x1 + largest_roi.width;
+      |             [01;35m[K^~[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:62:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   62 |         int [01;35m[Ky2[m[K = y1 + largest_roi.height;
+      |             [01;35m[K^~[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:129:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcreate_publisher[m[K’?
+  129 |           [01;31m[Kcmd_vel_publisher_[m[K->publish(cmd_vel_msg);
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |           [32m[Kcreate_publisher[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:[m[K At global scope:
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:146:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  146 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/body_follow.dir/build.make:76: CMakeFiles/body_follow.dir/src/body_follow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/body_follow.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

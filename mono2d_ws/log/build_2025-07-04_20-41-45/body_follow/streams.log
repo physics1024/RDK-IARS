@@ -1,0 +1,21 @@
+[0.076s] Invoking command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/mono2d_ws/build/body_follow -- -j8 -l8
+[0.294s] [35m[1mConsolidate compiler generated dependencies of target body_follow[0m
+[0.392s] [ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+[18.555s] [01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:[m[K In member function ‘[01m[Kvoid BodyRoiSubscriber::topic_callback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[18.556s] [01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:68:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.557s]    68 |         int [01;35m[Kx2[m[K = x1 + largest_roi.width;
+[18.558s]       |             [01;35m[K^~[m[K
+[18.565s] [01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:69:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.566s]    69 |         int [01;35m[Ky2[m[K = y1 + largest_roi.height;
+[18.566s]       |             [01;35m[K^~[m[K
+[18.626s] [01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:102:53:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_area_area[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_area[m[K’?
+[18.627s]   102 |             double area_ratio = static_cast<double>([01;31m[Ktarget_area_area[m[K) / max_area;
+[18.628s]       |                                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[18.629s]       |                                                     [32m[Ktarget_area[m[K
+[18.630s] [01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:101:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_area[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.631s]   101 |             double [01;35m[Ktarget_area[m[K = 350 * 400;  // 期望的框面积大小
+[18.632s]       |                    [01;35m[K^~~~~~~~~~~[m[K
+[37.545s] gmake[2]: *** [CMakeFiles/body_follow.dir/build.make:76: CMakeFiles/body_follow.dir/src/body_follow.cpp.o] Error 1
+[37.546s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/body_follow.dir/all] Error 2
+[37.547s] gmake: *** [Makefile:146: all] Error 2
+[37.557s] Invoked command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/mono2d_ws/build/body_follow -- -j8 -l8

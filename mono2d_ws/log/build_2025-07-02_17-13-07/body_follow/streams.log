@@ -1,0 +1,25 @@
+[0.061s] Invoking command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/mono2d_ws/build/body_follow -- -j8 -l8
+[0.337s] [ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+[50.588s] [100%] [32m[1mLinking CXX executable body_follow[0m
+[54.013s] [100%] Built target body_follow
+[54.068s] Invoked command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/mono2d_ws/build/body_follow -- -j8 -l8
+[54.125s] Invoking command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/jianye_dev/mono2d_ws/build/body_follow
+[54.160s] -- Install configuration: ""
+[54.160s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/lib/body_follow/body_follow
+[54.188s] -- Set runtime path of "/home/sunrise/jianye_dev/mono2d_ws/install/body_follow/lib/body_follow/body_follow" to ""
+[54.189s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/package_run_dependencies/body_follow
+[54.189s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/parent_prefix_path/body_follow
+[54.190s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/ament_prefix_path.sh
+[54.190s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/ament_prefix_path.dsv
+[54.191s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/path.sh
+[54.191s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/path.dsv
+[54.192s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.bash
+[54.192s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.sh
+[54.192s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.zsh
+[54.193s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.dsv
+[54.193s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/package.dsv
+[54.194s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/packages/body_follow
+[54.194s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/cmake/body_followConfig.cmake
+[54.195s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/cmake/body_followConfig-version.cmake
+[54.196s] -- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/package.xml
+[54.203s] Invoked command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/jianye_dev/mono2d_ws/build/body_follow

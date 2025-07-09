@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target body_follow[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:11:1:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kclass[m[K’
+   11 | [01;31m[Kclass[m[K BodyRoiSubscriber : public rclcpp::Node
+      | [01;31m[K^~~~~[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:113:35:[m[K [01;31m[Kerror: [m[K‘[01m[KBodyRoiSubscriber[m[K’ was not declared in this scope
+  113 |     rclcpp::spin(std::make_shared<[01;31m[KBodyRoiSubscriber[m[K>());
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:113:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+  113 |     rclcpp::spin([01;31m[Kstd::make_shared<BodyRoiSubscriber>()[m[K);
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:113:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  113 |     rclcpp::spin([01;31m[Kstd::make_shared<BodyRoiSubscriber>()[m[K);
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/body_follow.dir/build.make:76: CMakeFiles/body_follow.dir/src/body_follow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/body_follow.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

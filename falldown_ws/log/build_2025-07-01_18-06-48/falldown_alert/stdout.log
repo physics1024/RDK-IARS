@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/falldown_alert/falldown_alert.egg-info
+writing ../../build/falldown_alert/falldown_alert.egg-info/PKG-INFO
+writing dependency_links to ../../build/falldown_alert/falldown_alert.egg-info/dependency_links.txt
+writing entry points to ../../build/falldown_alert/falldown_alert.egg-info/entry_points.txt
+writing requirements to ../../build/falldown_alert/falldown_alert.egg-info/requires.txt
+writing top-level names to ../../build/falldown_alert/falldown_alert.egg-info/top_level.txt
+writing manifest file '../../build/falldown_alert/falldown_alert.egg-info/SOURCES.txt'
+reading manifest file '../../build/falldown_alert/falldown_alert.egg-info/SOURCES.txt'
+writing manifest file '../../build/falldown_alert/falldown_alert.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build
+creating /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib
+creating /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib/falldown_alert
+copying falldown_alert/falldown_alert.py -> /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib/falldown_alert
+copying falldown_alert/__init__.py -> /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib/falldown_alert
+running install
+running install_lib
+creating /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert
+copying /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib/falldown_alert/falldown_alert.py -> /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert
+copying /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib/falldown_alert/__init__.py -> /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert
+byte-compiling /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert/falldown_alert.py to falldown_alert.cpython-310.pyc
+byte-compiling /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/ament_index
+creating /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/ament_index/resource_index
+creating /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/ament_index/resource_index/packages
+copying resource/falldown_alert -> /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/ament_index/resource_index/packages
+copying package.xml -> /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert
+running install_egg_info
+Copying ../../build/falldown_alert/falldown_alert.egg-info to /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert-0.0.0-py3.10.egg-info
+running install_scripts
+Installing falldown_detector script to /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/falldown_alert
+writing list of installed files to '/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/install.log'

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跌倒警报</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .alert-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 700px;
+            text-align: center;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(220, 53, 69, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+        }
+        h1 {
+            color: #dc3545;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .alert-icon {
+            font-size: 5rem;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .btn-reset {
+            background: linear-gradient(to right, #4CAF50, #2E7D32);
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn-reset:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-container">
+        <div class="alert-icon">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+        </div>
+        <h1>跌倒检测警报!</h1>
+        
+        <div class="alert alert-danger fs-4">
+            系统检测到被监护人发生跌倒事件，请立即处理！
+        </div>
+        
+        <div class="instructions">
+            <h3>应急处理步骤:</h3>
+            <ol>
+                <li>立即查看被监护人状态</li>
+                <li>检查被监护人周围环境是否安全</li>
+                <li>如果无法及时到达现场，通过视频监控确认被监护人状态</li>
+                <li>如需帮助，请及时联系紧急服务</li>
+            </ol>
+            <p class="mt-3"><strong>注意:</strong> 在确认安全前，请勿重启监护系统</p>
+        </div>
+        
+        <button class="btn btn-reset btn-lg" onclick="resetAlert()">
+            确认安全并重置系统
+        </button>
+        <footer class="text-center">©2025 physics1024. </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function resetAlert() {
+            fetch('/reset_alert', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        // 返回控制面板
+                        window.location.href = "/ctrl";
+                    }
+                });
+        }
+    </script>
+</body>
+</html>

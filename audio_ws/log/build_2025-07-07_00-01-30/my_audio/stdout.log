@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/my_audio/my_audio.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_audio/my_audio.egg-info/dependency_links.txt
+writing entry points to ../../build/my_audio/my_audio.egg-info/entry_points.txt
+writing requirements to ../../build/my_audio/my_audio.egg-info/requires.txt
+writing top-level names to ../../build/my_audio/my_audio.egg-info/top_level.txt
+reading manifest file '../../build/my_audio/my_audio.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_audio/my_audio.egg-info/SOURCES.txt'
+running build
+running build_py
+copying my_audio/my_audio.py -> /home/sunrise/jianye_dev/audio_ws/build/my_audio/build/lib/my_audio
+running install
+running install_lib
+copying /home/sunrise/jianye_dev/audio_ws/build/my_audio/build/lib/my_audio/my_audio.py -> /home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages/my_audio
+byte-compiling /home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages/my_audio/my_audio.py to my_audio.cpython-310.pyc
+running install_data
+copying package.xml -> /home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio
+running install_egg_info
+removing '/home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages/my_audio-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/my_audio/my_audio.egg-info to /home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages/my_audio-0.0.0-py3.10.egg-info
+running install_scripts
+Installing my_audio script to /home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/my_audio
+writing list of installed files to '/home/sunrise/jianye_dev/audio_ws/build/my_audio/install.log'

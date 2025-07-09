@@ -1,0 +1,6 @@
+source;share/falldown_alert/hook/pythonpath.ps1
+source;share/falldown_alert/hook/pythonpath.dsv
+source;share/falldown_alert/hook/pythonpath.sh
+source;share/falldown_alert/hook/ament_prefix_path.ps1
+source;share/falldown_alert/hook/ament_prefix_path.dsv
+source;share/falldown_alert/hook/ament_prefix_path.sh

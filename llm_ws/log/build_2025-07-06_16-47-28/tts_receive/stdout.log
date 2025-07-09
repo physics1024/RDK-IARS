@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/tts_receive/tts_receive.egg-info/PKG-INFO
+writing dependency_links to ../../build/tts_receive/tts_receive.egg-info/dependency_links.txt
+writing entry points to ../../build/tts_receive/tts_receive.egg-info/entry_points.txt
+writing requirements to ../../build/tts_receive/tts_receive.egg-info/requires.txt
+writing top-level names to ../../build/tts_receive/tts_receive.egg-info/top_level.txt
+reading manifest file '../../build/tts_receive/tts_receive.egg-info/SOURCES.txt'
+writing manifest file '../../build/tts_receive/tts_receive.egg-info/SOURCES.txt'
+running build
+running build_py
+copying tts_receive/tts_receive.py -> /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib/tts_receive
+running install
+running install_lib
+copying /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib/tts_receive/tts_receive.py -> /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive
+byte-compiling /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive/tts_receive.py to tts_receive.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/tts_receive/tts_receive.egg-info to /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive-0.0.0-py3.10.egg-info
+running install_scripts
+Installing tts_receive script to /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/tts_receive
+writing list of installed files to '/home/sunrise/jianye_dev/llm_ws/build/tts_receive/install.log'

@@ -1,0 +1,7 @@
+[0.057s] Invoking command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/mono2d_ws/build/body_follow -- -j8 -l8
+[0.253s] [35m[1mConsolidate compiler generated dependencies of target body_follow[0m
+[0.349s] [ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+[23.944s] gmake[2]: *** [CMakeFiles/body_follow.dir/build.make:76: CMakeFiles/body_follow.dir/src/body_follow.cpp.o] Interrupt
+[23.944s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/body_follow.dir/all] Interrupt
+[23.945s] gmake: *** [Makefile:146: all] Interrupt
+[24.060s] Invoked command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/mono2d_ws/build/body_follow -- -j8 -l8

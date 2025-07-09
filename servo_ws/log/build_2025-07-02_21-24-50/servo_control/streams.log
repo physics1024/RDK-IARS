@@ -1,0 +1,24 @@
+[4.169s] Invoking command in '/home/sunrise/jianye_dev/motor_ws/src/servo_control': PYTHONPATH=/home/sunrise/jianye_dev/motor_ws/build/servo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_control build --build-base /home/sunrise/jianye_dev/motor_ws/build/servo_control/build install --record /home/sunrise/jianye_dev/motor_ws/build/servo_control/install.log --single-version-externally-managed install_data
+[5.772s] running egg_info
+[5.776s] writing ../../build/servo_control/servo_control.egg-info/PKG-INFO
+[5.777s] writing dependency_links to ../../build/servo_control/servo_control.egg-info/dependency_links.txt
+[5.778s] writing entry points to ../../build/servo_control/servo_control.egg-info/entry_points.txt
+[5.779s] writing requirements to ../../build/servo_control/servo_control.egg-info/requires.txt
+[5.779s] writing top-level names to ../../build/servo_control/servo_control.egg-info/top_level.txt
+[5.790s] reading manifest file '../../build/servo_control/servo_control.egg-info/SOURCES.txt'
+[5.795s] writing manifest file '../../build/servo_control/servo_control.egg-info/SOURCES.txt'
+[5.796s] running build
+[5.796s] running build_py
+[5.797s] copying servo_control/servo_control.py -> /home/sunrise/jianye_dev/motor_ws/build/servo_control/build/lib/servo_control
+[5.798s] running install
+[5.800s] running install_lib
+[5.803s] copying /home/sunrise/jianye_dev/motor_ws/build/servo_control/build/lib/servo_control/servo_control.py -> /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control
+[5.807s] byte-compiling /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control/servo_control.py to servo_control.cpython-310.pyc
+[5.812s] running install_data
+[5.813s] running install_egg_info
+[5.823s] removing '/home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control-0.0.0-py3.10.egg-info' (and everything under it)
+[5.824s] Copying ../../build/servo_control/servo_control.egg-info to /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control-0.0.0-py3.10.egg-info
+[5.829s] running install_scripts
+[5.950s] Installing servo_control script to /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/servo_control
+[5.952s] writing list of installed files to '/home/sunrise/jianye_dev/motor_ws/build/servo_control/install.log'
+[6.158s] Invoked command in '/home/sunrise/jianye_dev/motor_ws/src/servo_control' returned '0': PYTHONPATH=/home/sunrise/jianye_dev/motor_ws/build/servo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_control build --build-base /home/sunrise/jianye_dev/motor_ws/build/servo_control/build install --record /home/sunrise/jianye_dev/motor_ws/build/servo_control/install.log --single-version-externally-managed install_data

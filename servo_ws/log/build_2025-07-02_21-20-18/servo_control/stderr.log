@@ -1,0 +1,5 @@
+  File "/home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control/servo_control.py", line 79
+    elif cmd == 5 #水平竖直全回正
+                  ^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: expected ':'
+

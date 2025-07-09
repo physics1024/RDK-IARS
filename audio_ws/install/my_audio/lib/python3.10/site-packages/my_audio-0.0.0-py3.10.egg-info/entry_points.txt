@@ -1,0 +1,3 @@
+[console_scripts]
+my_audio = my_audio.my_audio:main
+

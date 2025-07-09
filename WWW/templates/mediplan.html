@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>智能药盒设置 - RDK Dashboard</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary: #4d94ff;
+            --secondary: #6c757d;
+            --success: #198754;
+            --danger: #dc3545;
+            --dark: #1a1a2e;
+            --darker: #0d0d1a;
+        }
+        
+        body {
+            background: rgba(33, 37, 41, 1);
+            color: #ffffff; /* 所有文本为白色 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+        
+        /* 确保所有文本元素为白色 */
+        h1, h2, h3, h4, h5, h6, p, label, .form-text, .text-muted, .compartment-content, .guide-item {
+            color: #ffffff !important;
+        }
+        
+        .text-muted {
+            opacity: 0.8;
+        }
+        
+        .form-text {
+            color: #cccccc !important; /* 表单提示文字为浅灰色 */
+        }
+        
+        .card {
+            background: rgba(25, 25, 35, 0.85);
+            border: 1px solid #444;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .form-control, .form-select {
+            background-color: rgba(40, 40, 55, 0.7);
+            border: 1px solid #555;
+            color: #ffffff;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            background-color: rgba(50, 50, 65, 0.8);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(77, 148, 255, 0.25);
+            color: #fff;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, #0b5ed7 100%);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            padding: 10px 20px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #0b5ed7 0%, #0a58ca 100%);
+            transform: translateY(-2px);
+        }
+        
+        .btn-danger {
+            background: linear-gradient(135deg, var(--danger) 0%, #b02a37 100%);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            padding: 10px 20px;
+            transition: all 0.3s;
+        }
+        
+        .btn-danger:hover {
+            background: linear-gradient(135deg, #b02a37 0%, #a52834 100%);
+            transform: translateY(-2px);
+        }
+        
+        .medicine-item {
+            background: rgba(35, 35, 50, 0.6);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--primary);
+            transition: all 0.3s;
+        }
+        
+        .medicine-item:hover {
+            background: rgba(40, 40, 60, 0.8);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .header-title {
+            font-weight: 700;
+            color: var(--primary);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 5px;
+        }
+        
+        .step-indicator {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .step {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #444;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 10px;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .step.active {
+            background: var(--primary);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .step::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 40px;
+            height: 2px;
+            background: #444;
+        }
+        
+        .step:last-child::after {
+            display: none;
+        }
+        
+        .step.active::after {
+            background: var(--primary);
+        }
+        
+        .compartment-guide {
+            background: rgba(40, 40, 60, 0.8);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px solid var(--primary);
+        }
+        
+        .compartment-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .compartment {
+            background: rgba(30, 30, 45, 0.9);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid #444;
+            transition: all 0.3s;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .compartment:hover {
+            transform: scale(1.05);
+            border-color: var(--primary);
+        }
+        
+        .compartment-emergency {
+            border-color: var(--danger);
+        }
+        
+        .compartment-emergency:hover {
+            border-color: #ff6b6b;
+        }
+        
+        .compartment-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .compartment-content {
+            font-size: 0.9rem;
+        }
+        
+        .sos-button {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            z-index: 1000;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(220, 53, 69, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+        }
+        
+        .guide-item {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+        }
+        
+        .time-option {
+            margin: 5px 0;
+            padding: 5px;
+            background: rgba(50, 50, 70, 0.6);
+            border-radius: 5px;
+        }
+        
+        .time-option label {
+            margin-left: 8px;
+        }
+        
+        .compartment-diagram {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+            height: 300px;
+        }
+        
+        .compartment-circle {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background: rgba(50, 50, 70, 0.6);
+            border: 2px solid var(--primary);
+        }
+        
+        .compartment-sector {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+            transform-origin: center;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .compartment-sector:nth-child(1) { transform: rotate(0deg); background: rgba(255, 255, 255, 0.1); }
+        .compartment-sector:nth-child(2) { transform: rotate(60deg); background: rgba(77, 148, 255, 0.2); }
+        .compartment-sector:nth-child(3) { transform: rotate(120deg); background: rgba(77, 148, 255, 0.3); }
+        .compartment-sector:nth-child(4) { transform: rotate(180deg); background: rgba(77, 148, 255, 0.4); }
+        .compartment-sector:nth-child(5) { transform: rotate(240deg); background: rgba(77, 148, 255, 0.5); }
+        .compartment-sector:nth-child(6) { transform: rotate(300deg); background: rgba(220, 53, 69, 0.4); }
+        
+        .compartment-label {
+            position: absolute;
+            transform: rotate(-60deg);
+            font-size: 0.9rem;
+            width: 100px;
+            text-align: center;
+            color: #ffffff; /* 确保标签为白色 */
+        }
+        
+        .time-selection {
+            background: rgba(40, 40, 60, 0.6);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+        
+        .alert-success, .alert-danger {
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white">RDK Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle_item" aria-controls="toggle_item" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggle_item">
+                <div class="navbar-nav">
+                    <a class="nav-link text-white" href="/">简介</a>
+                    <a class="nav-link text-white" href="/ctrl">控制面板</a>
+                    <a class="nav-link text-white" href="/nav">巡航设置</a>
+                    <a class="nav-link active text-white" href="/mediplan">智能药盒设置</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 应急药物按钮 -->
+    <div class="sos-button">
+        <button id="emergencyBtn" class="btn btn-danger btn-lg">
+            <i class="bi bi-alarm"></i> 应急药物
+        </button>
+    </div>
+    
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card p-4">
+                    <h2 class="text-center mb-4 header-title">智能药盒设置</h2>
+                    
+                    <div class="compartment-diagram">
+                        <div class="compartment-circle">
+                            <div class="compartment-sector">
+                                <div class="compartment-label">预备区</div>
+                            </div>
+                            <div class="compartment-sector">
+                                <div class="compartment-label">早晨 (区域2)</div>
+                            </div>
+                            <div class="compartment-sector">
+                                <div class="compartment-label">中午 (区域3)</div>
+                            </div>
+                            <div class="compartment-sector">
+                                <div class="compartment-label">下午 (区域4)</div>
+                            </div>
+                            <div class="compartment-sector">
+                                <div class="compartment-label">晚上 (区域5)</div>
+                            </div>
+                            <div class="compartment-sector">
+                                <div class="compartment-label">应急区</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-center mb-4">请配置您的药品信息，系统将根据您的设置自动提醒服药</p>
+                    
+                    <div class="step-indicator">
+                        <div class="step active">1</div>
+                        <div class="step">2</div>
+                        <div class="step">3</div>
+                    </div>
+                    
+                    <!-- 第一步：输入药品种类数 -->
+                    <div id="step1">
+                        <div class="mb-4">
+                            <label for="medicineCount" class="form-label">服用药品种类数量</label>
+                            <input type="number" class="form-control form-control-lg" id="medicineCount" 
+                                   min="1" max="10" placeholder="请输入1-10之间的数字" required>
+                            <div class="form-text">请输入需要服用的药品种类数量（最多10种）</div>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button id="nextStep1" class="btn btn-primary btn-lg">下一步</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 第二步：输入每种药品信息 -->
+                    <div id="step2" style="display: none;">
+                        <h4 class="mb-3">请填写每种药品信息</h4>
+                        
+                        <div id="medicineList" class="mb-4">
+                            <!-- 药品信息将在这里动态生成 -->
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button id="prevStep1" class="btn btn-secondary me-md-2">上一步</button>
+                            <button id="nextStep2" class="btn btn-primary">下一步</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 第三步：药盘区域分配指南 -->
+                    <div id="step3" style="display: none;">
+                        <h4 class="mb-3">药盘区域分配指南</h4>
+                        <p class="text-muted">请根据以下指南将药品放入药盘的相应区域：</p>
+                        
+                        <div class="compartment-guide">
+                            <div class="compartment-grid">
+                                <div class="compartment">
+                                    <div class="compartment-header text-white">区域 1 (预备区)</div>
+                                    <div class="compartment-content">不可放药</div>
+                                </div>
+                                <div class="compartment">
+                                    <div class="compartment-header text-white">区域 2 (早晨)</div>
+                                    <div class="compartment-content" id="comp2"></div>
+                                </div>
+                                <div class="compartment">
+                                    <div class="compartment-header text-white">区域 3 (中午)</div>
+                                    <div class="compartment-content" id="comp3"></div>
+                                </div>
+                                <div class="compartment">
+                                    <div class="compartment-header text-white">区域 4 (下午)</div>
+                                    <div class="compartment-content" id="comp4"></div>
+                                </div>
+                                <div class="compartment">
+                                    <div class="compartment-header text-white">区域 5 (晚上)</div>
+                                    <div class="compartment-content" id="comp5"></div>
+                                </div>
+                                <div class="compartment compartment-emergency">
+                                    <div class="compartment-header text-white">区域 6 (应急区)</div>
+                                    <div class="compartment-content">紧急药物</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <h5>详细放置指南：</h5>
+                                <div id="placementGuide">
+                                    <!-- 放置指南将在这里生成 -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                            <button id="prevStep2" class="btn btn-secondary me-md-2">上一步</button>
+                            <button id="submitForm" class="btn btn-primary">提交配置</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 提交结果消息 -->
+                    <div id="successMessage" class="alert alert-success mt-4" style="display: none;">
+                        <i class="bi bi-check-circle-fill"></i> 药品配置已成功提交！
+                    </div>
+                    
+                    <div id="errorMessage" class="alert alert-danger mt-4" style="display: none;">
+                        <i class="bi bi-exclamation-circle-fill"></i> <span id="errorText">提交过程中发生错误，请重试</span>
+                    </div>
+
+                    <footer class="text-center text-white">©2025 physics1024. </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            let medicineCount = 0;
+            let medicineData = [];
+            
+            // 药盘时间段配置
+            const timeSlots = {
+                "morning": { id: 2, label: "早晨" },
+                "noon": { id: 3, label: "中午" },
+                "afternoon": { id: 4, label: "下午" },
+                "evening": { id: 5, label: "晚上" }
+            };
+            
+            // 应急按钮点击事件
+            $('#emergencyBtn').click(function() {
+                // 发送SOS请求
+                $.ajax({
+                    url: '/sos',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ action: 'emergency' }),
+                    success: function(response) {
+                        alert('应急药物已弹出！');
+                    },
+                    error: function() {
+                        alert('请求失败，请重试');
+                    }
+                });
+            });
+            
+            // 第一步：下一步按钮点击事件
+            $('#nextStep1').click(function() {
+                const count = parseInt($('#medicineCount').val());
+                
+                if (isNaN(count) || count < 1 || count > 10) {
+                    alert('请输入1到10之间的有效数字');
+                    return;
+                }
+                
+                medicineCount = count;
+                generateMedicineForm(count);
+                $('#step1').hide();
+                $('#step2').show();
+                $('.step').removeClass('active');
+                $('.step:nth-child(2)').addClass('active');
+            });
+            
+            // 第二步：上一步按钮点击事件
+            $('#prevStep1').click(function() {
+                $('#step2').hide();
+                $('#step1').show();
+                $('.step').removeClass('active');
+                $('.step:nth-child(1)').addClass('active');
+            });
+            
+            // 第二步：下一步按钮点击事件
+            $('#nextStep2').click(function() {
+                // 验证并收集数据
+                medicineData = [];
+                let isValid = true;
+                
+                for (let i = 1; i <= medicineCount; i++) {
+                    const name = $(`#medicineName${i}`).val().trim();
+                    const dosage = $(`#medicineDosage${i}`).val().trim();
+                    const frequency = $(`#medicineFrequency${i}`).val();
+                    const selectedTimes = [];
+                    
+                    // 收集选中的时间段
+                    $(`input[name="medicineTimes${i}"]:checked`).each(function() {
+                        selectedTimes.push($(this).val());
+                    });
+                    
+                    if (!name || !dosage || !frequency || selectedTimes.length === 0) {
+                        isValid = false;
+                        alert(`请填写药品 #${i} 的完整信息`);
+                        break;
+                    }
+                    
+                    if (selectedTimes.length != frequency) {
+                        isValid = false;
+                        alert(`药品 #${i}：请选择${frequency}个时间段`);
+                        break;
+                    }
+                    
+                    medicineData.push({
+                        name: name,
+                        dosage: dosage,
+                        frequency: frequency,
+                        times: selectedTimes
+                    });
+                }
+                
+                if (!isValid) return;
+                
+                // 生成药盘区域分配指南
+                generateCompartmentGuide();
+                
+                // 进入第三步
+                $('#step2').hide();
+                $('#step3').show();
+                $('.step').removeClass('active');
+                $('.step:nth-child(3)').addClass('active');
+            });
+            
+            // 第三步：上一步按钮点击事件
+            $('#prevStep2').click(function() {
+                $('#step3').hide();
+                $('#step2').show();
+                $('.step').removeClass('active');
+                $('.step:nth-child(2)').addClass('active');
+            });
+            
+            // 生成药品表单
+            function generateMedicineForm(count) {
+                let html = '';
+                for (let i = 1; i <= count; i++) {
+                    html += `
+                    <div class="medicine-item">
+                        <h5 class="mb-3">药品 #${i}</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="medicineName${i}" class="form-label">药品名称</label>
+                                <input type="text" class="form-control" id="medicineName${i}" 
+                                       placeholder="请输入药品名称" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="medicineDosage${i}" class="form-label">每次用量</label>
+                                <input type="text" class="form-control" id="medicineDosage${i}" 
+                                       placeholder="例如：1片，10ml" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="medicineFrequency${i}" class="form-label">每日服用次数</label>
+                                <select class="form-select" id="medicineFrequency${i}" required>
+                                    <option value="">请选择次数</option>
+                                    <option value="1">每日1次</option>
+                                    <option value="2">每日2次</option>
+                                    <option value="3">每日3次</option>
+                                    <option value="4">每日4次</option>
+                                </select>
+                                <div class="form-text">请选择该药品每日需要服用的次数</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">选择服药时间段</label>
+                                <div id="timeSelection${i}" class="time-selection">
+                                    <div class="text-muted">请先选择服用次数</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                }
+                
+                $('#medicineList').html(html);
+                
+                // 为每个药品添加频率选择事件监听
+                for (let i = 1; i <= count; i++) {
+                    $(`#medicineFrequency${i}`).change(function() {
+                        const frequency = $(this).val();
+                        generateTimeOptions(i, frequency);
+                    });
+                }
+            }
+            
+            // 根据频率生成时间选项
+            function generateTimeOptions(index, frequency) {
+                let timeHtml = '';
+                
+                if (frequency) {
+                    timeHtml = `
+                    <div class="form-text mb-2">请选择${frequency}个时间段：</div>
+                    <div class="time-option">
+                        <input type="checkbox" id="time${index}_morning" name="medicineTimes${index}" value="morning">
+                        <label for="time${index}_morning">早晨 (区域2)</label>
+                    </div>
+                    <div class="time-option">
+                        <input type="checkbox" id="time${index}_noon" name="medicineTimes${index}" value="noon">
+                        <label for="time${index}_noon">中午 (区域3)</label>
+                    </div>
+                    <div class="time-option">
+                        <input type="checkbox" id="time${index}_afternoon" name="medicineTimes${index}" value="afternoon">
+                        <label for="time${index}_afternoon">下午 (区域4)</label>
+                    </div>
+                    <div class="time-option">
+                        <input type="checkbox" id="time${index}_evening" name="medicineTimes${index}" value="evening">
+                        <label for="time${index}_evening">晚上 (区域5)</label>
+                    </div>
+                    `;
+                } else {
+                    timeHtml = '<div class="text-muted">请先选择服用次数</div>';
+                }
+                
+                $(`#timeSelection${index}`).html(timeHtml);
+            }
+            
+            // 生成药盘区域分配指南
+            function generateCompartmentGuide() {
+                // 清空指南
+                $('#placementGuide').empty();
+                
+                // 重置药区内容
+                $('#comp2, #comp3, #comp4, #comp5').empty();
+                
+                // 按区域分组药品
+                const compartmentMedicines = {
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: []
+                };
+                
+                // 生成放置指南
+                let guideHtml = '';
+                medicineData.forEach((medicine, index) => {
+                    medicine.times.forEach(time => {
+                        const compartment = timeSlots[time].id;
+                        const timeLabel = timeSlots[time].label;
+                        
+                        guideHtml += `
+                        <div class="guide-item">
+                            <i class="bi bi-capsule"></i> <strong>${medicine.name}</strong> 
+                            (${medicine.dosage}, ${timeLabel}) → 
+                            放入 <span class="text-primary">区域 ${compartment}</span>
+                        </div>
+                        `;
+                        
+                        // 添加到药区
+                        compartmentMedicines[compartment].push(medicine.name);
+                    });
+                });
+                
+                // 更新药区显示
+                for (const compartment in compartmentMedicines) {
+                    if (compartmentMedicines[compartment].length > 0) {
+                        $(`#comp${compartment}`).html(compartmentMedicines[compartment].join('<br>'));
+                    } else {
+                        $(`#comp${compartment}`).html('无药品');
+                    }
+                }
+                
+                $('#placementGuide').html(guideHtml);
+            }
+            
+            // 提交表单
+            $('#submitForm').click(function() {
+                // 创建JSON数据
+                const jsonData = {
+                    medicines: medicineData
+                };
+                
+                // 显示提交的JSON数据
+                console.log('提交的药品数据:', jsonData);
+                
+                // 模拟AJAX提交
+                simulateSubmit(jsonData);
+            });
+            
+            // 模拟提交到后端
+            function simulateSubmit(data) {
+                // 显示加载状态
+                const submitBtn = $('#submitForm');
+                submitBtn.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 提交中...').prop('disabled', true);
+                
+                // 模拟网络延迟
+                setTimeout(function() {
+                    // 模拟成功提交
+                    submitBtn.html('提交配置').prop('disabled', false);
+                    $('#successMessage').show();
+                    $('#errorMessage').hide();
+                }, 1500);
+            }
+        });
+    </script>
+    <script>
+        let alertActive = false;
+        let checkFallInterval;
+        
+        // 初始化页面
+        $(document).ready(function() {
+            // 启动跌倒检查轮询
+            startFallCheck();
+            
+            // 重置警报按钮事件
+            $('#resetAlertBtn').click(function() {
+                $.post('/reset_alert', function(response) {
+                    if (response.status === 'success') {
+                        $('#alertBanner').addClass('d-none');
+                        alertActive = false;
+                    }
+                });
+            });
+        });
+        
+        // 启动跌倒检查
+        function startFallCheck() {
+            checkFallInterval = setInterval(() => {
+                $.get('/check_fall', function(data) {
+                    if (data.alert && !alertActive) {
+                        // 显示警报横幅
+                        $('#alertBanner').removeClass('d-none');
+                        alertActive = true;
+                        
+                        // 添加警报效果
+                        $('body').css('box-shadow', 'inset 0 0 0 5px red');
+                        setTimeout(() => {
+                            $('body').css('box-shadow', 'none');
+                        }, 1000);
+                        setTimeout(() => {
+                            location.reload(true);
+                        }, 1000)
+                    }
+                });
+            }, 2000); // 每2秒检查一次
+        }
+    </script>
+    <script type="text/javascript">
+        !function () {
+            //封装方法，压缩之后减少文件大小
+            function get_attribute(node, attr, default_value) {
+                return node.getAttribute(attr) || default_value;
+            }
+    
+            //封装方法，压缩之后减少文件大小
+            function get_by_tagname(name) {
+                return document.getElementsByTagName(name);
+            }
+    
+            //获取配置参数
+            function get_config_option() {
+                var scripts = get_by_tagname("script"),
+                    script_len = scripts.length,
+                    script = scripts[script_len - 1]; //当前加载的script
+                return {
+                    l: script_len, //长度，用于生成id用
+                    z: get_attribute(script, "zIndex", -1), //z-index
+                    o: get_attribute(script, "opacity", 0.8), //opacity
+                    c: get_attribute(script, "color", "255,255,255"), //color
+                    n: get_attribute(script, "count", 350) //count
+                };
+            }
+    
+            //设置canvas的高宽
+            function set_canvas_size() {
+                canvas_width = the_canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+                    canvas_height = the_canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+            }
+    
+            //绘制过程
+            function draw_canvas() {
+                context.clearRect(0, 0, canvas_width, canvas_height);
+                //随机的线条和当前位置联合数组
+                var e, i, d, x_dist, y_dist, dist; //临时节点
+                //遍历处理每一个点
+                random_points.forEach(function (r, idx) {
+                    r.x += r.xa,
+                        r.y += r.ya, //移动
+                        r.xa *= r.x > canvas_width || r.x < 0 ? -1 : 1,
+                        r.ya *= r.y > canvas_height || r.y < 0 ? -1 : 1, //碰到边界，反向反弹
+                        context.fillRect(r.x - 0.5, r.y - 0.5, 1, 1); //绘制一个宽高为1的点
+                    //从下一个点开始
+                    for (i = idx + 1; i < all_array.length; i++) {
+                        e = all_array[i];
+                        // 当前点存在
+                        if (null !== e.x && null !== e.y) {
+                            x_dist = r.x - e.x; //x轴距离 l
+                            y_dist = r.y - e.y; //y轴距离 n
+                            dist = x_dist * x_dist + y_dist * y_dist; //总距离, m
+    
+                            dist < e.max && (e === current_point && dist >= e.max / 2 && (r.x -= 0.03 * x_dist, r.y -= 0.03 * y_dist), //靠近的时候加速
+                                d = (e.max - dist) / e.max,
+                                context.beginPath(),
+                                context.lineWidth = d / 2,
+                                context.strokeStyle = "#FFFFFF",
+                                context.moveTo(r.x, r.y),
+                                context.lineTo(e.x, e.y),
+                                context.stroke());
+                        }
+                    }
+                }), frame_func(draw_canvas);
+            }
+    
+            //创建画布，并添加到body中
+            var the_canvas = document.createElement("canvas"), //画布
+                config = get_config_option(), //配置
+                canvas_id = "c_n" + config.l, //canvas id
+                context = the_canvas.getContext("2d"), canvas_width, canvas_height,
+                frame_func = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (func) {
+                    window.setTimeout(func, 1000 / 40);
+                }, random = Math.random,
+                current_point = {
+                    x: null, //当前鼠标x
+                    y: null, //当前鼠标y
+                    max: 20000 // 圈半径的平方
+                },
+                all_array;
+            the_canvas.id = canvas_id;
+            the_canvas.style.cssText = "position:fixed;top:0;left:0;z-index:" + config.z + ";opacity:" + config.o;
+            get_by_tagname("body")[0].appendChild(the_canvas);
+    
+            //初始化画布大小
+            set_canvas_size();
+            window.onresize = set_canvas_size;
+            //当时鼠标位置存储，离开的时候，释放当前位置信息
+            window.onmousemove = function (e) {
+                e = e || window.event;
+                current_point.x = e.clientX;
+                current_point.y = e.clientY;
+            }, window.onmouseout = function () {
+                current_point.x = null;
+                current_point.y = null;
+            };
+            //随机生成config.n条线位置信息
+            for (var random_points = [], i = 0; config.n > i; i++) {
+                var x = random() * canvas_width, //随机位置
+                    y = random() * canvas_height,
+                    xa = 2 * random() - 1, //随机运动方向
+                    ya = 2 * random() - 1;
+                // 随机点
+                random_points.push({
+                    x: x,
+                    y: y,
+                    xa: xa,
+                    ya: ya,
+                    max: 6000 //沾附距离
+                });
+            }
+            all_array = random_points.concat([current_point]);
+            //0.1秒后绘制
+            setTimeout(function () {
+                draw_canvas();
+            }, 100);
+        }();
+    </script>
+</body>
+</html>

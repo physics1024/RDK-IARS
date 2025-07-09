@@ -1,0 +1,24 @@
+[4.360s] Invoking command in '/home/sunrise/jianye_dev/audio_ws/src/my_audio': PYTHONPATH=/home/sunrise/jianye_dev/audio_ws/build/my_audio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_audio build --build-base /home/sunrise/jianye_dev/audio_ws/build/my_audio/build install --record /home/sunrise/jianye_dev/audio_ws/build/my_audio/install.log --single-version-externally-managed install_data
+[6.051s] running egg_info
+[6.056s] writing ../../build/my_audio/my_audio.egg-info/PKG-INFO
+[6.057s] writing dependency_links to ../../build/my_audio/my_audio.egg-info/dependency_links.txt
+[6.058s] writing entry points to ../../build/my_audio/my_audio.egg-info/entry_points.txt
+[6.058s] writing requirements to ../../build/my_audio/my_audio.egg-info/requires.txt
+[6.059s] writing top-level names to ../../build/my_audio/my_audio.egg-info/top_level.txt
+[6.071s] reading manifest file '../../build/my_audio/my_audio.egg-info/SOURCES.txt'
+[6.076s] writing manifest file '../../build/my_audio/my_audio.egg-info/SOURCES.txt'
+[6.076s] running build
+[6.077s] running build_py
+[6.078s] copying my_audio/my_audio.py -> /home/sunrise/jianye_dev/audio_ws/build/my_audio/build/lib/my_audio
+[6.079s] running install
+[6.081s] running install_lib
+[6.085s] copying /home/sunrise/jianye_dev/audio_ws/build/my_audio/build/lib/my_audio/my_audio.py -> /home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages/my_audio
+[6.088s] byte-compiling /home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages/my_audio/my_audio.py to my_audio.cpython-310.pyc
+[6.091s] running install_data
+[6.092s] running install_egg_info
+[6.103s] removing '/home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages/my_audio-0.0.0-py3.10.egg-info' (and everything under it)
+[6.104s] Copying ../../build/my_audio/my_audio.egg-info to /home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages/my_audio-0.0.0-py3.10.egg-info
+[6.108s] running install_scripts
+[6.236s] Installing my_audio script to /home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/my_audio
+[6.238s] writing list of installed files to '/home/sunrise/jianye_dev/audio_ws/build/my_audio/install.log'
+[6.460s] Invoked command in '/home/sunrise/jianye_dev/audio_ws/src/my_audio' returned '0': PYTHONPATH=/home/sunrise/jianye_dev/audio_ws/build/my_audio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_audio build --build-base /home/sunrise/jianye_dev/audio_ws/build/my_audio/build install --record /home/sunrise/jianye_dev/audio_ws/build/my_audio/install.log --single-version-externally-managed install_data

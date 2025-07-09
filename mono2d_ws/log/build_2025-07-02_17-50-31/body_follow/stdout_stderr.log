@@ -1,0 +1,42 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ai_msgs: 2.0.1 (/opt/tros/humble/share/ai_msgs/cmake)
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sunrise/jianye_dev/mono2d_ws/build/body_follow
+[35m[1mConsolidate compiler generated dependencies of target body_follow[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:[m[K In member function ‘[01m[Kvoid BodyRoiSubscriber::topic_callback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:43:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfound[m[K’ was not declared in this scope; did you mean ‘[01m[Kround[m[K’?
+   43 |             [01;31m[Kfound[m[K = true;
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[Kround[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:51:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   51 |         int [01;35m[Kx2[m[K = x1 + largest_roi.width;
+      |             [01;35m[K^~[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:52:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   52 |         int [01;35m[Ky2[m[K = y1 + largest_roi.height;
+      |             [01;35m[K^~[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:65:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfound[m[K’ was not declared in this scope; did you mean ‘[01m[Kround[m[K’?
+   65 |         if ([01;31m[Kfound[m[K) {
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[Kround[m[K
+gmake[2]: *** [CMakeFiles/body_follow.dir/build.make:76: CMakeFiles/body_follow.dir/src/body_follow.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/body_follow.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

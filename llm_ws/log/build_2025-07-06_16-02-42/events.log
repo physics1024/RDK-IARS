@@ -1,0 +1,104 @@
+[0.000000] (-) TimerEvent: {}
+[0.001676] (tts_receive) JobQueued: {'identifier': 'tts_receive', 'dependencies': OrderedDict()}
+[0.002480] (tts_receive) JobStarted: {'identifier': 'tts_receive'}
+[0.098766] (-) TimerEvent: {}
+[0.199561] (-) TimerEvent: {}
+[0.300402] (-) TimerEvent: {}
+[0.401164] (-) TimerEvent: {}
+[0.501948] (-) TimerEvent: {}
+[0.602804] (-) TimerEvent: {}
+[0.703617] (-) TimerEvent: {}
+[0.804433] (-) TimerEvent: {}
+[0.905253] (-) TimerEvent: {}
+[1.006073] (-) TimerEvent: {}
+[1.106876] (-) TimerEvent: {}
+[1.207689] (-) TimerEvent: {}
+[1.308538] (-) TimerEvent: {}
+[1.409370] (-) TimerEvent: {}
+[1.510175] (-) TimerEvent: {}
+[1.610978] (-) TimerEvent: {}
+[1.711856] (-) TimerEvent: {}
+[1.812808] (-) TimerEvent: {}
+[1.913598] (-) TimerEvent: {}
+[2.014399] (-) TimerEvent: {}
+[2.115216] (-) TimerEvent: {}
+[2.216043] (-) TimerEvent: {}
+[2.316925] (-) TimerEvent: {}
+[2.417775] (-) TimerEvent: {}
+[2.518586] (-) TimerEvent: {}
+[2.619396] (-) TimerEvent: {}
+[2.720220] (-) TimerEvent: {}
+[2.821032] (-) TimerEvent: {}
+[2.921828] (-) TimerEvent: {}
+[3.022659] (-) TimerEvent: {}
+[3.123455] (-) TimerEvent: {}
+[3.224262] (-) TimerEvent: {}
+[3.325051] (-) TimerEvent: {}
+[3.425834] (-) TimerEvent: {}
+[3.526642] (-) TimerEvent: {}
+[3.627472] (-) TimerEvent: {}
+[3.728266] (-) TimerEvent: {}
+[3.829353] (-) TimerEvent: {}
+[3.930224] (-) TimerEvent: {}
+[4.031222] (-) TimerEvent: {}
+[4.133559] (-) TimerEvent: {}
+[4.154008] (tts_receive) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/tts_receive', 'build', '--build-base', '/home/sunrise/jianye_dev/llm_ws/build/tts_receive/build', 'install', '--record', '/home/sunrise/jianye_dev/llm_ws/build/tts_receive/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sunrise/jianye_dev/llm_ws/src/tts_receive', 'env': {'LANGUAGE': 'en_US.UTF-8', 'USER': 'sunrise', 'SSH_CLIENT': '192.168.127.9 11391 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/userdata/dev_ws/install/origincar_base/lib:/userdata/dev_ws/install/serial/lib:/userdata/dev_ws/install/origincar_msg/lib:/userdata/dev_ws/install/ackermann_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:', 'BROWSER': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/sunrise', 'OLDPWD': '/home/sunrise/jianye_dev/llm_ws/src', 'TERM_PROGRAM_VERSION': '1.97.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d81b1ed4-8d5a-41f5-886d-1228ce8aed8a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/sunrise/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/home/sunrise/jianye_dev/llm_ws/install:/home/sunrise/jianye_dev/rplidar_ws/install:/userdata/dev_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sunrise', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/bin/remote-cli:/home/sunrise/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sunrise/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/sunrise/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-5923367cb0a06e98.txt', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-bac3a1d443.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/sunrise/jianye_dev/llm_ws/install/tts_receive:/home/sunrise/jianye_dev/llm_ws/install/rdk_llm:/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/utils:/userdata/dev_ws/install/origincar_base:/userdata/dev_ws/install/serial:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_navigation:/userdata/dev_ws/install/origincar_control:/userdata/dev_ws/install/origincar_msg:/userdata/dev_ws/install/origincar_description:/userdata/dev_ws/install/origincar_capimage:/userdata/dev_ws/install/origincar_bringup:/userdata/dev_ws/install/ackermann_msgs:/opt/tros/humble:/opt/ros/humble', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/sunrise/jianye_dev/llm_ws/build/tts_receive', 'SSH_CONNECTION': '192.168.127.9 11391 192.168.127.10 22', 'PYTHONPATH': '/home/sunrise/jianye_dev/llm_ws/build/tts_receive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages:/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages:/userdata/dev_ws/install/vlm/lib/python3.10/site-packages:/userdata/dev_ws/install/origincar_base/local/lib/python3.10/dist-packages:/userdata/dev_ws/install/qr_code_detection/lib/python3.10/site-packages:/userdata/dev_ws/install/origincar_msg/local/lib/python3.10/dist-packages:/userdata/dev_ws/install/origincar_capimage/lib/python3.10/site-packages:/userdata/dev_ws/install/ackermann_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/sunrise/jianye_dev/llm_ws/install/rdk_llm:/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros:/userdata/dev_ws/install/utils:/userdata/dev_ws/install/origincar_base:/userdata/dev_ws/install/serial:/userdata/dev_ws/install/origincar_navigation:/userdata/dev_ws/install/origincar_control:/userdata/dev_ws/install/origincar_msg:/userdata/dev_ws/install/origincar_description:/userdata/dev_ws/install/origincar_bringup:/userdata/dev_ws/install/ackermann_msgs'}, 'shell': False}
+[4.233761] (-) TimerEvent: {}
+[4.334631] (-) TimerEvent: {}
+[4.435449] (-) TimerEvent: {}
+[4.536254] (-) TimerEvent: {}
+[4.637073] (-) TimerEvent: {}
+[4.737903] (-) TimerEvent: {}
+[4.838739] (-) TimerEvent: {}
+[4.939543] (-) TimerEvent: {}
+[5.040348] (-) TimerEvent: {}
+[5.141161] (-) TimerEvent: {}
+[5.241961] (-) TimerEvent: {}
+[5.342816] (-) TimerEvent: {}
+[5.443629] (-) TimerEvent: {}
+[5.544446] (-) TimerEvent: {}
+[5.645258] (-) TimerEvent: {}
+[5.746062] (-) TimerEvent: {}
+[5.784331] (tts_receive) StdoutLine: {'line': b'running egg_info\n'}
+[5.788979] (tts_receive) StdoutLine: {'line': b'creating ../../build/tts_receive/tts_receive.egg-info\n'}
+[5.790262] (tts_receive) StdoutLine: {'line': b'writing ../../build/tts_receive/tts_receive.egg-info/PKG-INFO\n'}
+[5.791483] (tts_receive) StdoutLine: {'line': b'writing dependency_links to ../../build/tts_receive/tts_receive.egg-info/dependency_links.txt\n'}
+[5.792162] (tts_receive) StdoutLine: {'line': b'writing entry points to ../../build/tts_receive/tts_receive.egg-info/entry_points.txt\n'}
+[5.792810] (tts_receive) StdoutLine: {'line': b'writing requirements to ../../build/tts_receive/tts_receive.egg-info/requires.txt\n'}
+[5.793388] (tts_receive) StdoutLine: {'line': b'writing top-level names to ../../build/tts_receive/tts_receive.egg-info/top_level.txt\n'}
+[5.794082] (tts_receive) StdoutLine: {'line': b"writing manifest file '../../build/tts_receive/tts_receive.egg-info/SOURCES.txt'\n"}
+[5.803240] (tts_receive) StdoutLine: {'line': b"reading manifest file '../../build/tts_receive/tts_receive.egg-info/SOURCES.txt'\n"}
+[5.807159] (tts_receive) StdoutLine: {'line': b"writing manifest file '../../build/tts_receive/tts_receive.egg-info/SOURCES.txt'\n"}
+[5.807970] (tts_receive) StdoutLine: {'line': b'running build\n'}
+[5.808560] (tts_receive) StdoutLine: {'line': b'running build_py\n'}
+[5.809331] (tts_receive) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build\n'}
+[5.809936] (tts_receive) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib\n'}
+[5.810523] (tts_receive) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib/tts_receive\n'}
+[5.811082] (tts_receive) StdoutLine: {'line': b'copying tts_receive/tts_receive.py -> /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib/tts_receive\n'}
+[5.811571] (tts_receive) StdoutLine: {'line': b'copying tts_receive/__init__.py -> /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib/tts_receive\n'}
+[5.812046] (tts_receive) StdoutLine: {'line': b'running install\n'}
+[5.812737] (tts_receive) StdoutLine: {'line': b'running install_lib\n'}
+[5.816517] (tts_receive) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive\n'}
+[5.817256] (tts_receive) StdoutLine: {'line': b'copying /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib/tts_receive/tts_receive.py -> /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive\n'}
+[5.817872] (tts_receive) StdoutLine: {'line': b'copying /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib/tts_receive/__init__.py -> /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive\n'}
+[5.820435] (tts_receive) StdoutLine: {'line': b'byte-compiling /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive/tts_receive.py to tts_receive.cpython-310.pyc\n'}
+[5.822588] (tts_receive) StdoutLine: {'line': b'byte-compiling /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive/__init__.py to __init__.cpython-310.pyc\n'}
+[5.823381] (tts_receive) StdoutLine: {'line': b'running install_data\n'}
+[5.824067] (tts_receive) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/ament_index\n'}
+[5.824722] (tts_receive) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/ament_index/resource_index\n'}
+[5.825340] (tts_receive) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/ament_index/resource_index/packages\n'}
+[5.825822] (tts_receive) StdoutLine: {'line': b'copying resource/tts_receive -> /home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/ament_index/resource_index/packages\n'}
+[5.826289] (tts_receive) StdoutLine: {'line': b'copying package.xml -> /home/sunrise/jianye_dev/llm_ws/install/tts_receive/share/tts_receive\n'}
+[5.826748] (tts_receive) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.835698] (tts_receive) StdoutLine: {'line': b'Copying ../../build/tts_receive/tts_receive.egg-info to /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive-0.0.0-py3.10.egg-info\n'}
+[5.839918] (tts_receive) StdoutLine: {'line': b'running install_scripts\n'}
+[5.846234] (-) TimerEvent: {}
+[5.947059] (-) TimerEvent: {}
+[5.962283] (tts_receive) StdoutLine: {'line': b'Installing tts_receive script to /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/tts_receive\n'}
+[5.964021] (tts_receive) StdoutLine: {'line': b"writing list of installed files to '/home/sunrise/jianye_dev/llm_ws/build/tts_receive/install.log'\n"}
+[6.047300] (-) TimerEvent: {}
+[6.148279] (-) TimerEvent: {}
+[6.167138] (tts_receive) CommandEnded: {'returncode': 0}
+[6.249122] (-) TimerEvent: {}
+[6.294667] (tts_receive) JobEnded: {'identifier': 'tts_receive', 'rc': 0}
+[6.299294] (-) EventReactorShutdown: {}

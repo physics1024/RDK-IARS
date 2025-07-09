@@ -1,0 +1,14 @@
+{
+  "micphone_enable": 1,
+  "micphone_name": "hw:1,0",
+  "micphone_rate": 16000,
+  "micphone_chn": 1,
+  "micphone_buffer_time": 0,
+  "micphone_nperiods": 4,
+  "micphone_period_size": 512,
+  "voip_mode": 0,
+  "mic_type": 1,
+  "asr_mode": 2,
+  "asr_channel": 0,
+  "save_audio": 0
+}

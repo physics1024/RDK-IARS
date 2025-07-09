@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/tts_receive/tts_receive.egg-info/PKG-INFO
+../../build/tts_receive/tts_receive.egg-info/SOURCES.txt
+../../build/tts_receive/tts_receive.egg-info/dependency_links.txt
+../../build/tts_receive/tts_receive.egg-info/entry_points.txt
+../../build/tts_receive/tts_receive.egg-info/requires.txt
+../../build/tts_receive/tts_receive.egg-info/top_level.txt
+../../build/tts_receive/tts_receive.egg-info/zip-safe
+resource/tts_receive
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+tts_receive/__init__.py
+tts_receive/tts_receive.py

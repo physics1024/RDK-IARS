@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target body_follow[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+gmake[2]: *** [CMakeFiles/body_follow.dir/build.make:76: CMakeFiles/body_follow.dir/src/body_follow.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/body_follow.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,3 @@
+[console_scripts]
+tts_receive = tts_receive.tts_receive:main
+

@@ -1,0 +1,6 @@
+source;share/tts_receive/hook/pythonpath.ps1
+source;share/tts_receive/hook/pythonpath.dsv
+source;share/tts_receive/hook/pythonpath.sh
+source;share/tts_receive/hook/ament_prefix_path.ps1
+source;share/tts_receive/hook/ament_prefix_path.dsv
+source;share/tts_receive/hook/ament_prefix_path.sh

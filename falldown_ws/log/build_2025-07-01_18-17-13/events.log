@@ -1,0 +1,90 @@
+[0.000000] (-) TimerEvent: {}
+[0.001152] (falldown_alert) JobQueued: {'identifier': 'falldown_alert', 'dependencies': OrderedDict()}
+[0.002196] (falldown_alert) JobStarted: {'identifier': 'falldown_alert'}
+[0.098938] (-) TimerEvent: {}
+[0.199747] (-) TimerEvent: {}
+[0.300558] (-) TimerEvent: {}
+[0.401383] (-) TimerEvent: {}
+[0.502205] (-) TimerEvent: {}
+[0.603031] (-) TimerEvent: {}
+[0.703832] (-) TimerEvent: {}
+[0.804623] (-) TimerEvent: {}
+[0.905406] (-) TimerEvent: {}
+[1.006204] (-) TimerEvent: {}
+[1.107001] (-) TimerEvent: {}
+[1.207853] (-) TimerEvent: {}
+[1.308671] (-) TimerEvent: {}
+[1.409498] (-) TimerEvent: {}
+[1.510324] (-) TimerEvent: {}
+[1.611165] (-) TimerEvent: {}
+[1.712098] (-) TimerEvent: {}
+[1.813044] (-) TimerEvent: {}
+[1.913967] (-) TimerEvent: {}
+[2.014770] (-) TimerEvent: {}
+[2.115555] (-) TimerEvent: {}
+[2.216355] (-) TimerEvent: {}
+[2.317230] (-) TimerEvent: {}
+[2.418115] (-) TimerEvent: {}
+[2.518911] (-) TimerEvent: {}
+[2.619740] (-) TimerEvent: {}
+[2.720550] (-) TimerEvent: {}
+[2.821346] (-) TimerEvent: {}
+[2.922139] (-) TimerEvent: {}
+[3.022947] (-) TimerEvent: {}
+[3.123771] (-) TimerEvent: {}
+[3.224589] (-) TimerEvent: {}
+[3.325389] (-) TimerEvent: {}
+[3.426184] (-) TimerEvent: {}
+[3.526991] (-) TimerEvent: {}
+[3.627838] (-) TimerEvent: {}
+[3.728675] (-) TimerEvent: {}
+[3.829625] (-) TimerEvent: {}
+[3.930539] (-) TimerEvent: {}
+[4.031463] (-) TimerEvent: {}
+[4.096685] (falldown_alert) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/falldown_alert', 'build', '--build-base', '/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build', 'install', '--record', '/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sunrise/jianye_dev/falldown_ws/src/falldown_alert', 'env': {'SUDO_GID': '1000', 'MAIL': '/var/mail/root', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'root', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/userdata/dev_ws/install/origincar_base/lib:/userdata/dev_ws/install/serial/lib:/userdata/dev_ws/install/origincar_msg/lib:/userdata/dev_ws/install/ackermann_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/home/sunrise/jianye_dev/falldown_ws/src', 'ROS_PYTHON_VERSION': '3', 'COLORTERM': 'truecolor', 'TROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/home/sunrise/jianye_dev/falldown_ws/install:/userdata/dev_ws/install:/home/sunrise/jianye_dev/rplidar_ws/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SUDO_COMMAND': '/usr/bin/su', 'AMENT_PREFIX_PATH': '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/utils:/userdata/dev_ws/install/origincar_base:/userdata/dev_ws/install/serial:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_control:/userdata/dev_ws/install/origincar_msg:/userdata/dev_ws/install/origincar_description:/userdata/dev_ws/install/origincar_capimage:/userdata/dev_ws/install/origincar_bringup:/userdata/dev_ws/install/ackermann_msgs:/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros:/opt/tros/humble:/opt/ros/humble', 'SHELL': '/bin/bash', 'SUDO_USER': 'sunrise', 'PWD': '/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert', 'PYTHONPATH': '/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages:/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages:/userdata/dev_ws/install/vlm/lib/python3.10/site-packages:/userdata/dev_ws/install/origincar_base/local/lib/python3.10/dist-packages:/userdata/dev_ws/install/qr_code_detection/lib/python3.10/site-packages:/userdata/dev_ws/install/origincar_msg/local/lib/python3.10/dist-packages:/userdata/dev_ws/install/origincar_capimage/lib/python3.10/site-packages:/userdata/dev_ws/install/ackermann_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/userdata/dev_ws/install/utils:/userdata/dev_ws/install/origincar_base:/userdata/dev_ws/install/serial:/userdata/dev_ws/install/origincar_control:/userdata/dev_ws/install/origincar_msg:/userdata/dev_ws/install/origincar_description:/userdata/dev_ws/install/origincar_bringup:/userdata/dev_ws/install/ackermann_msgs:/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros'}, 'shell': False}
+[4.132461] (-) TimerEvent: {}
+[4.235729] (-) TimerEvent: {}
+[4.336534] (-) TimerEvent: {}
+[4.437330] (-) TimerEvent: {}
+[4.538178] (-) TimerEvent: {}
+[4.638992] (-) TimerEvent: {}
+[4.739825] (-) TimerEvent: {}
+[4.840629] (-) TimerEvent: {}
+[4.941442] (-) TimerEvent: {}
+[5.042273] (-) TimerEvent: {}
+[5.143036] (-) TimerEvent: {}
+[5.243802] (-) TimerEvent: {}
+[5.344544] (-) TimerEvent: {}
+[5.445323] (-) TimerEvent: {}
+[5.546148] (-) TimerEvent: {}
+[5.646946] (-) TimerEvent: {}
+[5.689803] (falldown_alert) StdoutLine: {'line': b'running egg_info\n'}
+[5.693832] (falldown_alert) StdoutLine: {'line': b'writing ../../build/falldown_alert/falldown_alert.egg-info/PKG-INFO\n'}
+[5.694955] (falldown_alert) StdoutLine: {'line': b'writing dependency_links to ../../build/falldown_alert/falldown_alert.egg-info/dependency_links.txt\n'}
+[5.695809] (falldown_alert) StdoutLine: {'line': b'writing entry points to ../../build/falldown_alert/falldown_alert.egg-info/entry_points.txt\n'}
+[5.696443] (falldown_alert) StdoutLine: {'line': b'writing requirements to ../../build/falldown_alert/falldown_alert.egg-info/requires.txt\n'}
+[5.697025] (falldown_alert) StdoutLine: {'line': b'writing top-level names to ../../build/falldown_alert/falldown_alert.egg-info/top_level.txt\n'}
+[5.707349] (falldown_alert) StdoutLine: {'line': b"reading manifest file '../../build/falldown_alert/falldown_alert.egg-info/SOURCES.txt'\n"}
+[5.712441] (falldown_alert) StdoutLine: {'line': b"writing manifest file '../../build/falldown_alert/falldown_alert.egg-info/SOURCES.txt'\n"}
+[5.713214] (falldown_alert) StdoutLine: {'line': b'running build\n'}
+[5.713722] (falldown_alert) StdoutLine: {'line': b'running build_py\n'}
+[5.714261] (falldown_alert) StdoutLine: {'line': b'copying falldown_alert/falldown_alert.py -> /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib/falldown_alert\n'}
+[5.715303] (falldown_alert) StdoutLine: {'line': b'running install\n'}
+[5.717082] (falldown_alert) StdoutLine: {'line': b'running install_lib\n'}
+[5.721010] (falldown_alert) StdoutLine: {'line': b'copying /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib/falldown_alert/falldown_alert.py -> /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert\n'}
+[5.724693] (falldown_alert) StdoutLine: {'line': b'byte-compiling /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert/falldown_alert.py to falldown_alert.cpython-310.pyc\n'}
+[5.727561] (falldown_alert) StdoutLine: {'line': b'running install_data\n'}
+[5.728383] (falldown_alert) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.738282] (falldown_alert) StdoutLine: {'line': b"removing '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.739821] (falldown_alert) StdoutLine: {'line': b'Copying ../../build/falldown_alert/falldown_alert.egg-info to /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert-0.0.0-py3.10.egg-info\n'}
+[5.744051] (falldown_alert) StdoutLine: {'line': b'running install_scripts\n'}
+[5.747057] (-) TimerEvent: {}
+[5.847827] (-) TimerEvent: {}
+[5.865833] (falldown_alert) StdoutLine: {'line': b'Installing falldown_detector script to /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/falldown_alert\n'}
+[5.867598] (falldown_alert) StdoutLine: {'line': b"writing list of installed files to '/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/install.log'\n"}
+[5.948067] (-) TimerEvent: {}
+[6.049057] (-) TimerEvent: {}
+[6.071831] (falldown_alert) CommandEnded: {'returncode': 0}
+[6.149328] (-) TimerEvent: {}
+[6.198985] (falldown_alert) JobEnded: {'identifier': 'falldown_alert', 'rc': 0}
+[6.202713] (-) EventReactorShutdown: {}

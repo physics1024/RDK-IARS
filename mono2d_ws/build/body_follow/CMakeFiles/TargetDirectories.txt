@@ -1,0 +1,10 @@
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/uninstall.dir
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/body_follow_uninstall.dir
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/body_follow.dir
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/test.dir
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/edit_cache.dir
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/rebuild_cache.dir
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/list_install_components.dir
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/install.dir
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/install/local.dir
+/home/sunrise/jianye_dev/mono2d_ws/build/body_follow/CMakeFiles/install/strip.dir

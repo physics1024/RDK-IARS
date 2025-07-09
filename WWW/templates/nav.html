@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
+    crossorigin="anonymous"></script>
+    <style>
+        /* 添加自定义样式 */
+        #map-container {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            overflow: hidden;
+            z-index: 2; /* 确保在地图之上 */
+        }
+        canvas {
+            display: block;
+            background-color: #212529;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .instruction {
+            color: white;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        .btn-reset {
+            display: block;
+            margin: 15px auto;
+            width: 150px;
+        }
+        .alert-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(220, 53, 69, 0.9);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            z-index: 1000;
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">RDK Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle_item" aria-controls="toggle_item" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggle_item">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="/">简介</a>
+                    <a class="nav-link active" href="/ctrl">控制面板</a>
+                    <a class="nav-link active" href="/nav">巡航设置</a>
+                    <a class="nav-link active" href="/mediplan">智能药盒设置</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="text-center text-white">©2025 physics1024. </footer>
+    
+    <div class="instruction pt-3" id="instruction">
+        请在地图上点击选择导航终点位置
+    </div>
+    
+    <div id="map-container">
+        <canvas id="map"></canvas>
+    </div>
+    
+    <button id="resetBtn" class="btn btn-primary btn-reset d-none mt-4">重新选择</button>
+    
+    <div class="d-none">
+        <img src="{{ url_for('static', filename='images/map.png') }}" id="map-img" alt="地图数据">
+    </div>
+    
+    <div id="positionAlert" class="alert-message">
+        请在地图范围内选择位置！
+    </div>
+    
+    <script>
+        // 全局变量
+        let canvas, ctx;
+        let mapImage;
+        let clickCount = 0;
+        let startX, startY, endX, endY;
+        let arrowLength = 50; // 固定箭头长度（像素）
+        let arrowDrawn = false;
+        let mapRect = {x: 0, y: 0, width: 0, height: 0}; // 存储地图实际绘制区域
+        
+        // 初始化函数
+        function init() {
+            // 获取DOM元素
+            canvas = document.getElementById("map");
+            ctx = canvas.getContext("2d");
+            mapImage = document.getElementById("map-img");
+            
+            // 初始调整大小
+            resizeCanvas();
+            
+            // 添加事件监听
+            window.addEventListener("resize", resizeCanvas);
+            canvas.addEventListener("click", handleCanvasClick);
+            document.getElementById("resetBtn").addEventListener("click", resetDrawing);
+            
+            // 初始绘制
+            drawBackground();
+        }
+        
+        // 调整canvas大小以适应容器
+        function resizeCanvas() {
+            const container = document.getElementById("map-container");
+            const width = container.clientWidth;
+            const height = Math.min(window.innerHeight * 0.6, width * 0.75);
+            
+            canvas.width = width;
+            canvas.height = height;
+            
+            drawBackground();
+            if (clickCount === 1) {
+                drawArrow(startX, startY, startX, startY);
+            } else if (clickCount === 2) {
+                drawArrow(startX, startY, endX, endY);
+            }
+        }
+        
+        // 绘制背景地图
+        function drawBackground() {
+            if (!mapImage.complete) return;
+            
+            // 清除画布
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // 计算缩放比例
+            const scale = Math.min(
+                canvas.width / mapImage.naturalWidth,
+                canvas.height / mapImage.naturalHeight
+            );
+            
+            // 计算居中位置
+            const x = (canvas.width - mapImage.naturalWidth * scale) / 2;
+            const y = (canvas.height - mapImage.naturalHeight * scale) / 2;
+            
+            // 存储地图实际绘制区域
+            mapRect = {
+                x: x,
+                y: y,
+                width: mapImage.naturalWidth * scale,
+                height: mapImage.naturalHeight * scale
+            };
+            
+            // 绘制地图
+            ctx.drawImage(
+                mapImage, 
+                0, 0, mapImage.naturalWidth, mapImage.naturalHeight,
+                x, y, mapImage.naturalWidth * scale, mapImage.naturalHeight * scale
+            );
+        }
+        
+        // 检查点是否在地图范围内
+        function isPointInMap(x, y) {
+            return (
+                x >= mapRect.x && 
+                x <= mapRect.x + mapRect.width &&
+                y >= mapRect.y && 
+                y <= mapRect.y + mapRect.height
+            );
+        }
+        
+        // 显示位置错误提示
+        function showPositionAlert() {
+            const alert = document.getElementById("positionAlert");
+            alert.style.display = "block";
+            setTimeout(() => {
+                alert.style.display = "none";
+            }, 2000);
+        }
+        
+        // 处理画布点击事件
+        function handleCanvasClick(event) {
+            if (arrowDrawn) return;
+            
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+            
+            // 检查点击位置是否在地图范围内
+            if (!isPointInMap(x, y)) {
+                showPositionAlert();
+                return;
+            }
+            
+            clickCount++;
+            
+            if (clickCount === 1) {
+                // 第一次点击 - 设置起点
+                startX = x;
+                startY = y;
+                document.getElementById("instruction").textContent = "请点击确定位姿方向";
+                drawArrow(startX, startY, startX, startY);
+            } else if (clickCount === 2) {
+                // 第二次点击 - 设置终点并绘制完整箭头
+                endX = x;
+                endY = y;
+                
+                // 计算固定长度的箭头终点
+                const angle = Math.atan2(endY - startY, endX - startX);
+                endX = startX + Math.cos(angle) * arrowLength;
+                endY = startY + Math.sin(angle) * arrowLength;
+                
+                drawArrow(startX, startY, endX, endY);
+                document.getElementById("instruction").textContent = "终点设置完成";
+                arrowDrawn = true;
+                
+                // 显示重置按钮
+                document.getElementById("resetBtn").classList.remove("d-none");
+                
+                // 移除点击事件监听
+                canvas.removeEventListener("click", handleCanvasClick);
+            }
+        }
+        
+        // 绘制箭头
+        function drawArrow(fromX, fromY, toX, toY) {
+            drawBackground();
+            
+            // 绘制箭头线
+            ctx.beginPath();
+            ctx.moveTo(fromX, fromY);
+            ctx.lineTo(toX, toY);
+            ctx.strokeStyle = "red";
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            
+            // 绘制箭头头部
+            const headLength = 15;
+            const angle = Math.atan2(toY - fromY, toX - fromX);
+            
+            ctx.beginPath();
+            ctx.moveTo(toX, toY);
+            ctx.lineTo(
+                toX - headLength * Math.cos(angle - Math.PI / 6),
+                toY - headLength * Math.sin(angle - Math.PI / 6)
+            );
+            ctx.lineTo(
+                toX - headLength * Math.cos(angle + Math.PI / 6),
+                toY - headLength * Math.sin(angle + Math.PI / 6)
+            );
+            ctx.closePath();
+            ctx.fillStyle = "red";
+            ctx.fill();
+            
+            // 绘制起点圆点
+            ctx.beginPath();
+            ctx.arc(fromX, fromY, 5, 0, Math.PI * 2);
+            ctx.fillStyle = "blue";
+            ctx.fill();
+        }
+        
+        // 重置绘图
+        function resetDrawing() {
+            clickCount = 0;
+            arrowDrawn = false;
+            document.getElementById("instruction").textContent = "请在地图上点击选择导航终点位置";
+            document.getElementById("resetBtn").classList.add("d-none");
+            drawBackground();
+            
+            // 重新添加点击事件监听
+            canvas.addEventListener("click", handleCanvasClick);
+        }
+        
+        // 确保图片加载完成后再初始化
+        window.addEventListener("load", function() {
+            const mapImg = document.getElementById("map-img");
+            if (mapImg.complete) {
+                init();
+            } else {
+                mapImg.addEventListener("load", init);
+            }
+        });
+    </script>
+    <script>
+        let alertActive = false;
+        let checkFallInterval;
+        
+        // 初始化页面
+        $(document).ready(function() {
+            // 启动跌倒检查轮询
+            startFallCheck();
+            
+            // 重置警报按钮事件
+            $('#resetAlertBtn').click(function() {
+                $.post('/reset_alert', function(response) {
+                    if (response.status === 'success') {
+                        $('#alertBanner').addClass('d-none');
+                        alertActive = false;
+                    }
+                });
+            });
+        });
+        
+        // 启动跌倒检查
+        function startFallCheck() {
+            checkFallInterval = setInterval(() => {
+                $.get('/check_fall', function(data) {
+                    if (data.alert && !alertActive) {
+                        // 显示警报横幅
+                        $('#alertBanner').removeClass('d-none');
+                        alertActive = true;
+                        
+                        // 添加警报效果
+                        $('body').css('box-shadow', 'inset 0 0 0 5px red');
+                        setTimeout(() => {
+                            $('body').css('box-shadow', 'none');
+                        }, 1000);
+                        setTimeout(() => {
+                            location.reload(true);
+                        }, 1000)
+                    }
+                });
+            }, 2000); // 每2秒检查一次
+        }
+    </script>
+</body>

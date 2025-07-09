@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/servo_control/servo_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/servo_control/servo_control.egg-info/dependency_links.txt
+writing entry points to ../../build/servo_control/servo_control.egg-info/entry_points.txt
+writing requirements to ../../build/servo_control/servo_control.egg-info/requires.txt
+writing top-level names to ../../build/servo_control/servo_control.egg-info/top_level.txt
+reading manifest file '../../build/servo_control/servo_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/servo_control/servo_control.egg-info/SOURCES.txt'
+running build
+running build_py
+copying servo_control/servo_control.py -> /home/sunrise/jianye_dev/servo_ws/build/servo_control/build/lib/servo_control
+running install
+running install_lib
+copying /home/sunrise/jianye_dev/servo_ws/build/servo_control/build/lib/servo_control/servo_control.py -> /home/sunrise/jianye_dev/servo_ws/install/servo_control/lib/python3.10/site-packages/servo_control
+byte-compiling /home/sunrise/jianye_dev/servo_ws/install/servo_control/lib/python3.10/site-packages/servo_control/servo_control.py to servo_control.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/sunrise/jianye_dev/servo_ws/install/servo_control/lib/python3.10/site-packages/servo_control-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/servo_control/servo_control.egg-info to /home/sunrise/jianye_dev/servo_ws/install/servo_control/lib/python3.10/site-packages/servo_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing servo_control script to /home/sunrise/jianye_dev/servo_ws/install/servo_control/lib/servo_control
+writing list of installed files to '/home/sunrise/jianye_dev/servo_ws/build/servo_control/install.log'

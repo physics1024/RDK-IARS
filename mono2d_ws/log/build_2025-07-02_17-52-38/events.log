@@ -1,0 +1,203 @@
+[0.000000] (-) TimerEvent: {}
+[0.001158] (body_follow) JobQueued: {'identifier': 'body_follow', 'dependencies': OrderedDict()}
+[0.002229] (body_follow) JobStarted: {'identifier': 'body_follow'}
+[0.047544] (body_follow) JobProgress: {'identifier': 'body_follow', 'progress': 'cmake'}
+[0.050783] (body_follow) JobProgress: {'identifier': 'body_follow', 'progress': 'build'}
+[0.054675] (body_follow) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow', '--', '-j8', '-l8'], 'cwd': '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/userdata/dev_ws/install/origincar_base/lib:/userdata/dev_ws/install/serial/lib:/userdata/dev_ws/install/origincar_msg/lib:/userdata/dev_ws/install/ackermann_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/sunrise/jianye_dev'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/userdata/dev_ws/install:/home/sunrise/jianye_dev/rplidar_ws/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/su'), ('AMENT_PREFIX_PATH', '/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/utils:/userdata/dev_ws/install/origincar_base:/userdata/dev_ws/install/serial:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_control:/userdata/dev_ws/install/origincar_msg:/userdata/dev_ws/install/origincar_description:/userdata/dev_ws/install/origincar_capimage:/userdata/dev_ws/install/origincar_bringup:/userdata/dev_ws/install/ackermann_msgs:/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'sunrise'), ('PWD', '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow'), ('PYTHONPATH', '/userdata/dev_ws/install/vlm/lib/python3.10/site-packages:/userdata/dev_ws/install/origincar_base/local/lib/python3.10/dist-packages:/userdata/dev_ws/install/qr_code_detection/lib/python3.10/site-packages:/userdata/dev_ws/install/origincar_msg/local/lib/python3.10/dist-packages:/userdata/dev_ws/install/origincar_capimage/lib/python3.10/site-packages:/userdata/dev_ws/install/ackermann_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/userdata/dev_ws/install/utils:/userdata/dev_ws/install/origincar_base:/userdata/dev_ws/install/serial:/userdata/dev_ws/install/origincar_control:/userdata/dev_ws/install/origincar_msg:/userdata/dev_ws/install/origincar_description:/userdata/dev_ws/install/origincar_bringup:/userdata/dev_ws/install/ackermann_msgs:/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[0.098966] (-) TimerEvent: {}
+[0.199903] (-) TimerEvent: {}
+[0.267241] (body_follow) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target body_follow\x1b[0m\n'}
+[0.300109] (-) TimerEvent: {}
+[0.368249] (body_follow) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o\x1b[0m\n'}
+[0.400331] (-) TimerEvent: {}
+[0.501403] (-) TimerEvent: {}
+[0.602346] (-) TimerEvent: {}
+[0.703312] (-) TimerEvent: {}
+[0.804286] (-) TimerEvent: {}
+[0.905390] (-) TimerEvent: {}
+[1.006501] (-) TimerEvent: {}
+[1.107474] (-) TimerEvent: {}
+[1.208442] (-) TimerEvent: {}
+[1.309469] (-) TimerEvent: {}
+[1.410569] (-) TimerEvent: {}
+[1.511674] (-) TimerEvent: {}
+[1.612737] (-) TimerEvent: {}
+[1.713762] (-) TimerEvent: {}
+[1.814823] (-) TimerEvent: {}
+[1.915858] (-) TimerEvent: {}
+[2.016876] (-) TimerEvent: {}
+[2.117868] (-) TimerEvent: {}
+[2.218846] (-) TimerEvent: {}
+[2.319830] (-) TimerEvent: {}
+[2.420830] (-) TimerEvent: {}
+[2.521852] (-) TimerEvent: {}
+[2.622861] (-) TimerEvent: {}
+[2.723861] (-) TimerEvent: {}
+[2.824879] (-) TimerEvent: {}
+[2.925882] (-) TimerEvent: {}
+[3.026887] (-) TimerEvent: {}
+[3.127893] (-) TimerEvent: {}
+[3.228884] (-) TimerEvent: {}
+[3.329902] (-) TimerEvent: {}
+[3.430921] (-) TimerEvent: {}
+[3.532022] (-) TimerEvent: {}
+[3.633032] (-) TimerEvent: {}
+[3.734030] (-) TimerEvent: {}
+[3.835092] (-) TimerEvent: {}
+[3.936112] (-) TimerEvent: {}
+[4.037129] (-) TimerEvent: {}
+[4.138120] (-) TimerEvent: {}
+[4.239136] (-) TimerEvent: {}
+[4.340120] (-) TimerEvent: {}
+[4.441135] (-) TimerEvent: {}
+[4.542170] (-) TimerEvent: {}
+[4.643201] (-) TimerEvent: {}
+[4.744224] (-) TimerEvent: {}
+[4.845297] (-) TimerEvent: {}
+[4.946317] (-) TimerEvent: {}
+[5.047328] (-) TimerEvent: {}
+[5.148331] (-) TimerEvent: {}
+[5.249335] (-) TimerEvent: {}
+[5.350365] (-) TimerEvent: {}
+[5.451387] (-) TimerEvent: {}
+[5.552433] (-) TimerEvent: {}
+[5.653537] (-) TimerEvent: {}
+[5.754539] (-) TimerEvent: {}
+[5.855614] (-) TimerEvent: {}
+[5.956562] (-) TimerEvent: {}
+[6.057574] (-) TimerEvent: {}
+[6.158577] (-) TimerEvent: {}
+[6.259572] (-) TimerEvent: {}
+[6.360581] (-) TimerEvent: {}
+[6.461504] (-) TimerEvent: {}
+[6.562448] (-) TimerEvent: {}
+[6.663428] (-) TimerEvent: {}
+[6.764385] (-) TimerEvent: {}
+[6.865394] (-) TimerEvent: {}
+[6.966321] (-) TimerEvent: {}
+[7.067231] (-) TimerEvent: {}
+[7.168155] (-) TimerEvent: {}
+[7.269119] (-) TimerEvent: {}
+[7.370062] (-) TimerEvent: {}
+[7.471005] (-) TimerEvent: {}
+[7.571943] (-) TimerEvent: {}
+[7.672911] (-) TimerEvent: {}
+[7.773952] (-) TimerEvent: {}
+[7.874902] (-) TimerEvent: {}
+[7.975839] (-) TimerEvent: {}
+[8.076774] (-) TimerEvent: {}
+[8.177694] (-) TimerEvent: {}
+[8.278632] (-) TimerEvent: {}
+[8.379571] (-) TimerEvent: {}
+[8.480511] (-) TimerEvent: {}
+[8.581453] (-) TimerEvent: {}
+[8.682389] (-) TimerEvent: {}
+[8.783335] (-) TimerEvent: {}
+[8.884287] (-) TimerEvent: {}
+[8.985307] (-) TimerEvent: {}
+[9.086223] (-) TimerEvent: {}
+[9.187164] (-) TimerEvent: {}
+[9.288112] (-) TimerEvent: {}
+[9.389063] (-) TimerEvent: {}
+[9.490004] (-) TimerEvent: {}
+[9.590956] (-) TimerEvent: {}
+[9.691936] (-) TimerEvent: {}
+[9.792900] (-) TimerEvent: {}
+[9.893926] (-) TimerEvent: {}
+[9.994884] (-) TimerEvent: {}
+[10.095818] (-) TimerEvent: {}
+[10.196729] (-) TimerEvent: {}
+[10.297655] (-) TimerEvent: {}
+[10.398586] (-) TimerEvent: {}
+[10.499515] (-) TimerEvent: {}
+[10.600436] (-) TimerEvent: {}
+[10.701373] (-) TimerEvent: {}
+[10.802303] (-) TimerEvent: {}
+[10.903281] (-) TimerEvent: {}
+[11.004211] (-) TimerEvent: {}
+[11.105228] (-) TimerEvent: {}
+[11.206143] (-) TimerEvent: {}
+[11.307062] (-) TimerEvent: {}
+[11.407995] (-) TimerEvent: {}
+[11.508954] (-) TimerEvent: {}
+[11.609885] (-) TimerEvent: {}
+[11.710779] (-) TimerEvent: {}
+[11.811680] (-) TimerEvent: {}
+[11.912606] (-) TimerEvent: {}
+[12.013587] (-) TimerEvent: {}
+[12.114490] (-) TimerEvent: {}
+[12.215399] (-) TimerEvent: {}
+[12.316293] (-) TimerEvent: {}
+[12.417190] (-) TimerEvent: {}
+[12.518080] (-) TimerEvent: {}
+[12.619008] (-) TimerEvent: {}
+[12.719926] (-) TimerEvent: {}
+[12.820846] (-) TimerEvent: {}
+[12.921770] (-) TimerEvent: {}
+[13.022720] (-) TimerEvent: {}
+[13.123673] (-) TimerEvent: {}
+[13.224603] (-) TimerEvent: {}
+[13.325594] (-) TimerEvent: {}
+[13.426534] (-) TimerEvent: {}
+[13.527460] (-) TimerEvent: {}
+[13.628374] (-) TimerEvent: {}
+[13.729301] (-) TimerEvent: {}
+[13.830238] (-) TimerEvent: {}
+[13.931181] (-) TimerEvent: {}
+[14.032130] (-) TimerEvent: {}
+[14.133182] (-) TimerEvent: {}
+[14.234142] (-) TimerEvent: {}
+[14.335126] (-) TimerEvent: {}
+[14.386541] (body_follow) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:11:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kclass\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.387473] (body_follow) StderrLine: {'line': b'   11 | \x1b[01;31m\x1b[Kclass\x1b[m\x1b[K BodyRoiSubscriber : public rclcpp::Node\n'}
+[14.387974] (body_follow) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[14.428429] (body_follow) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.429587] (body_follow) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:113:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBodyRoiSubscriber\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.430144] (body_follow) StderrLine: {'line': b'  113 |     rclcpp::spin(std::make_shared<\x1b[01;31m\x1b[KBodyRoiSubscriber\x1b[m\x1b[K>());\n'}
+[14.430622] (body_follow) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.431073] (body_follow) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:113:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.431521] (body_follow) StderrLine: {'line': b'  113 |     rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<BodyRoiSubscriber>()\x1b[m\x1b[K);\n'}
+[14.431957] (body_follow) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[14.432396] (body_follow) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[14.432837] (body_follow) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[14.433271] (body_follow) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:1\x1b[m\x1b[K:\n'}
+[14.433709] (body_follow) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.434195] (body_follow) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[14.434636] (body_follow) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.435153] (-) TimerEvent: {}
+[14.435596] (body_follow) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.436096] (body_follow) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:113:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[14.436562] (body_follow) StderrLine: {'line': b'  113 |     rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<BodyRoiSubscriber>()\x1b[m\x1b[K);\n'}
+[14.437011] (body_follow) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[14.535412] (-) TimerEvent: {}
+[14.636335] (-) TimerEvent: {}
+[14.737326] (-) TimerEvent: {}
+[14.838264] (-) TimerEvent: {}
+[14.939228] (-) TimerEvent: {}
+[15.040191] (-) TimerEvent: {}
+[15.141118] (-) TimerEvent: {}
+[15.242072] (-) TimerEvent: {}
+[15.343022] (-) TimerEvent: {}
+[15.443965] (-) TimerEvent: {}
+[15.544923] (-) TimerEvent: {}
+[15.645876] (-) TimerEvent: {}
+[15.746828] (-) TimerEvent: {}
+[15.847773] (-) TimerEvent: {}
+[15.948728] (-) TimerEvent: {}
+[16.049695] (-) TimerEvent: {}
+[16.150637] (-) TimerEvent: {}
+[16.251596] (-) TimerEvent: {}
+[16.352551] (-) TimerEvent: {}
+[16.453495] (-) TimerEvent: {}
+[16.554470] (-) TimerEvent: {}
+[16.655441] (-) TimerEvent: {}
+[16.756368] (-) TimerEvent: {}
+[16.857305] (-) TimerEvent: {}
+[16.916789] (body_follow) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/body_follow.dir/build.make:76: CMakeFiles/body_follow.dir/src/body_follow.cpp.o] Error 1\n'}
+[16.919890] (body_follow) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/body_follow.dir/all] Error 2\n'}
+[16.922467] (body_follow) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.932511] (body_follow) CommandEnded: {'returncode': 2}
+[16.957896] (-) TimerEvent: {}
+[17.057738] (body_follow) JobEnded: {'identifier': 'body_follow', 'rc': 2}
+[17.059755] (-) TimerEvent: {}
+[17.071405] (-) EventReactorShutdown: {}

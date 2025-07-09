@@ -1,0 +1,105 @@
+[0.000000] (-) TimerEvent: {}
+[0.001284] (servo_control) JobQueued: {'identifier': 'servo_control', 'dependencies': OrderedDict()}
+[0.002534] (servo_control) JobStarted: {'identifier': 'servo_control'}
+[0.098898] (-) TimerEvent: {}
+[0.199724] (-) TimerEvent: {}
+[0.300547] (-) TimerEvent: {}
+[0.401383] (-) TimerEvent: {}
+[0.502211] (-) TimerEvent: {}
+[0.603040] (-) TimerEvent: {}
+[0.703861] (-) TimerEvent: {}
+[0.804682] (-) TimerEvent: {}
+[0.905517] (-) TimerEvent: {}
+[1.006330] (-) TimerEvent: {}
+[1.107141] (-) TimerEvent: {}
+[1.207961] (-) TimerEvent: {}
+[1.308808] (-) TimerEvent: {}
+[1.409617] (-) TimerEvent: {}
+[1.510433] (-) TimerEvent: {}
+[1.611236] (-) TimerEvent: {}
+[1.712073] (-) TimerEvent: {}
+[1.812932] (-) TimerEvent: {}
+[1.913805] (-) TimerEvent: {}
+[2.014633] (-) TimerEvent: {}
+[2.115456] (-) TimerEvent: {}
+[2.216284] (-) TimerEvent: {}
+[2.317105] (-) TimerEvent: {}
+[2.417887] (-) TimerEvent: {}
+[2.518720] (-) TimerEvent: {}
+[2.619508] (-) TimerEvent: {}
+[2.720301] (-) TimerEvent: {}
+[2.821098] (-) TimerEvent: {}
+[2.921882] (-) TimerEvent: {}
+[3.022682] (-) TimerEvent: {}
+[3.123474] (-) TimerEvent: {}
+[3.224269] (-) TimerEvent: {}
+[3.325075] (-) TimerEvent: {}
+[3.425854] (-) TimerEvent: {}
+[3.526632] (-) TimerEvent: {}
+[3.627454] (-) TimerEvent: {}
+[3.728239] (-) TimerEvent: {}
+[3.829069] (-) TimerEvent: {}
+[3.929865] (-) TimerEvent: {}
+[4.030669] (-) TimerEvent: {}
+[4.131537] (-) TimerEvent: {}
+[4.232458] (-) TimerEvent: {}
+[4.267064] (servo_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/servo_control', 'build', '--build-base', '/home/sunrise/jianye_dev/motor_ws/build/servo_control/build', 'install', '--record', '/home/sunrise/jianye_dev/motor_ws/build/servo_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sunrise/jianye_dev/motor_ws/src/servo_control', 'env': {'LANGUAGE': 'en_US.UTF-8', 'USER': 'sunrise', 'SSH_CLIENT': '192.168.127.9 10891 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/userdata/dev_ws/install/origincar_base/lib:/userdata/dev_ws/install/serial/lib:/userdata/dev_ws/install/origincar_msg/lib:/userdata/dev_ws/install/ackermann_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:', 'BROWSER': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/sunrise', 'OLDPWD': '/home/sunrise/jianye_dev/motor_ws/src', 'TERM_PROGRAM_VERSION': '1.97.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-0df56496-cca7-42f6-b4bc-d7e81f10ab0f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/sunrise/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/home/sunrise/jianye_dev/rplidar_ws/install:/userdata/dev_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sunrise', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/sunrise/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/bin/remote-cli:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sunrise/.vscode-server/extensions/ms-python.debugpy-2025.8.0/bundled/scripts/noConfigScripts', 'CAM_TYPE': 'usb', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/sunrise/.vscode-server/extensions/ms-python.debugpy-2025.8.0/.noConfigDebugAdapterEndpoints/endpoint-5923367cb0a06e98.txt', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-99c717c347.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/utils:/userdata/dev_ws/install/origincar_base:/userdata/dev_ws/install/serial:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_control:/userdata/dev_ws/install/origincar_msg:/userdata/dev_ws/install/origincar_description:/userdata/dev_ws/install/origincar_capimage:/userdata/dev_ws/install/origincar_bringup:/userdata/dev_ws/install/ackermann_msgs:/opt/tros/humble:/opt/ros/humble', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/sunrise/jianye_dev/motor_ws/build/servo_control', 'SSH_CONNECTION': '192.168.127.9 10891 192.168.127.10 22', 'PYTHONPATH': '/home/sunrise/jianye_dev/motor_ws/build/servo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages:/userdata/dev_ws/install/vlm/lib/python3.10/site-packages:/userdata/dev_ws/install/origincar_base/local/lib/python3.10/dist-packages:/userdata/dev_ws/install/qr_code_detection/lib/python3.10/site-packages:/userdata/dev_ws/install/origincar_msg/local/lib/python3.10/dist-packages:/userdata/dev_ws/install/origincar_capimage/lib/python3.10/site-packages:/userdata/dev_ws/install/ackermann_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/sunrise/jianye_dev/rplidar_ws/install/rplidar_ros:/userdata/dev_ws/install/utils:/userdata/dev_ws/install/origincar_base:/userdata/dev_ws/install/serial:/userdata/dev_ws/install/origincar_control:/userdata/dev_ws/install/origincar_msg:/userdata/dev_ws/install/origincar_description:/userdata/dev_ws/install/origincar_bringup:/userdata/dev_ws/install/ackermann_msgs'}, 'shell': False}
+[4.332694] (-) TimerEvent: {}
+[4.433516] (-) TimerEvent: {}
+[4.534329] (-) TimerEvent: {}
+[4.635153] (-) TimerEvent: {}
+[4.735971] (-) TimerEvent: {}
+[4.836803] (-) TimerEvent: {}
+[4.937656] (-) TimerEvent: {}
+[5.038471] (-) TimerEvent: {}
+[5.139259] (-) TimerEvent: {}
+[5.240056] (-) TimerEvent: {}
+[5.340830] (-) TimerEvent: {}
+[5.441621] (-) TimerEvent: {}
+[5.542432] (-) TimerEvent: {}
+[5.643252] (-) TimerEvent: {}
+[5.744066] (-) TimerEvent: {}
+[5.844854] (-) TimerEvent: {}
+[5.886263] (servo_control) StdoutLine: {'line': b'running egg_info\n'}
+[5.889636] (servo_control) StdoutLine: {'line': b'creating ../../build/servo_control/servo_control.egg-info\n'}
+[5.890764] (servo_control) StdoutLine: {'line': b'writing ../../build/servo_control/servo_control.egg-info/PKG-INFO\n'}
+[5.891923] (servo_control) StdoutLine: {'line': b'writing dependency_links to ../../build/servo_control/servo_control.egg-info/dependency_links.txt\n'}
+[5.892602] (servo_control) StdoutLine: {'line': b'writing entry points to ../../build/servo_control/servo_control.egg-info/entry_points.txt\n'}
+[5.893229] (servo_control) StdoutLine: {'line': b'writing requirements to ../../build/servo_control/servo_control.egg-info/requires.txt\n'}
+[5.893813] (servo_control) StdoutLine: {'line': b'writing top-level names to ../../build/servo_control/servo_control.egg-info/top_level.txt\n'}
+[5.894405] (servo_control) StdoutLine: {'line': b"writing manifest file '../../build/servo_control/servo_control.egg-info/SOURCES.txt'\n"}
+[5.903947] (servo_control) StdoutLine: {'line': b"reading manifest file '../../build/servo_control/servo_control.egg-info/SOURCES.txt'\n"}
+[5.908158] (servo_control) StdoutLine: {'line': b"writing manifest file '../../build/servo_control/servo_control.egg-info/SOURCES.txt'\n"}
+[5.908982] (servo_control) StdoutLine: {'line': b'running build\n'}
+[5.909569] (servo_control) StdoutLine: {'line': b'running build_py\n'}
+[5.910294] (servo_control) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/motor_ws/build/servo_control/build\n'}
+[5.910903] (servo_control) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/motor_ws/build/servo_control/build/lib\n'}
+[5.911490] (servo_control) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/motor_ws/build/servo_control/build/lib/servo_control\n'}
+[5.912002] (servo_control) StdoutLine: {'line': b'copying servo_control/servo_control.py -> /home/sunrise/jianye_dev/motor_ws/build/servo_control/build/lib/servo_control\n'}
+[5.912569] (servo_control) StdoutLine: {'line': b'copying servo_control/__init__.py -> /home/sunrise/jianye_dev/motor_ws/build/servo_control/build/lib/servo_control\n'}
+[5.913057] (servo_control) StdoutLine: {'line': b'running install\n'}
+[5.913770] (servo_control) StdoutLine: {'line': b'running install_lib\n'}
+[5.917543] (servo_control) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control\n'}
+[5.918384] (servo_control) StdoutLine: {'line': b'copying /home/sunrise/jianye_dev/motor_ws/build/servo_control/build/lib/servo_control/servo_control.py -> /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control\n'}
+[5.919110] (servo_control) StdoutLine: {'line': b'copying /home/sunrise/jianye_dev/motor_ws/build/servo_control/build/lib/servo_control/__init__.py -> /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control\n'}
+[5.921877] (servo_control) StdoutLine: {'line': b'byte-compiling /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control/servo_control.py to servo_control.cpython-310.pyc\n'}
+[5.925941] (servo_control) StdoutLine: {'line': b'byte-compiling /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control/__init__.py to __init__.cpython-310.pyc\n'}
+[5.926791] (servo_control) StdoutLine: {'line': b'running install_data\n'}
+[5.927527] (servo_control) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/motor_ws/install/servo_control/share/ament_index\n'}
+[5.928166] (servo_control) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/motor_ws/install/servo_control/share/ament_index/resource_index\n'}
+[5.928790] (servo_control) StdoutLine: {'line': b'creating /home/sunrise/jianye_dev/motor_ws/install/servo_control/share/ament_index/resource_index/packages\n'}
+[5.929369] (servo_control) StdoutLine: {'line': b'copying resource/servo_control -> /home/sunrise/jianye_dev/motor_ws/install/servo_control/share/ament_index/resource_index/packages\n'}
+[5.929830] (servo_control) StdoutLine: {'line': b'copying package.xml -> /home/sunrise/jianye_dev/motor_ws/install/servo_control/share/servo_control\n'}
+[5.930278] (servo_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.939156] (servo_control) StdoutLine: {'line': b'Copying ../../build/servo_control/servo_control.egg-info to /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/python3.10/site-packages/servo_control-0.0.0-py3.10.egg-info\n'}
+[5.943432] (servo_control) StdoutLine: {'line': b'running install_scripts\n'}
+[5.944946] (-) TimerEvent: {}
+[6.045608] (-) TimerEvent: {}
+[6.066320] (servo_control) StdoutLine: {'line': b'Installing servo_control script to /home/sunrise/jianye_dev/motor_ws/install/servo_control/lib/servo_control\n'}
+[6.067958] (servo_control) StdoutLine: {'line': b"writing list of installed files to '/home/sunrise/jianye_dev/motor_ws/build/servo_control/install.log'\n"}
+[6.145856] (-) TimerEvent: {}
+[6.246807] (-) TimerEvent: {}
+[6.269179] (servo_control) CommandEnded: {'returncode': 0}
+[6.347292] (-) TimerEvent: {}
+[6.366669] (servo_control) JobEnded: {'identifier': 'servo_control', 'rc': 0}
+[6.370640] (-) EventReactorShutdown: {}

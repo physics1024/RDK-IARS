@@ -1,0 +1,24 @@
+[4.109s] Invoking command in '/home/sunrise/jianye_dev/falldown_ws/src/falldown_alert': PYTHONPATH=/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/falldown_alert build --build-base /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build install --record /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/install.log --single-version-externally-managed install_data
+[5.688s] running egg_info
+[5.691s] writing ../../build/falldown_alert/falldown_alert.egg-info/PKG-INFO
+[5.692s] writing dependency_links to ../../build/falldown_alert/falldown_alert.egg-info/dependency_links.txt
+[5.693s] writing entry points to ../../build/falldown_alert/falldown_alert.egg-info/entry_points.txt
+[5.694s] writing requirements to ../../build/falldown_alert/falldown_alert.egg-info/requires.txt
+[5.695s] writing top-level names to ../../build/falldown_alert/falldown_alert.egg-info/top_level.txt
+[5.705s] reading manifest file '../../build/falldown_alert/falldown_alert.egg-info/SOURCES.txt'
+[5.710s] writing manifest file '../../build/falldown_alert/falldown_alert.egg-info/SOURCES.txt'
+[5.711s] running build
+[5.711s] running build_py
+[5.712s] copying falldown_alert/falldown_alert.py -> /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib/falldown_alert
+[5.713s] running install
+[5.715s] running install_lib
+[5.719s] copying /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build/lib/falldown_alert/falldown_alert.py -> /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert
+[5.722s] byte-compiling /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert/falldown_alert.py to falldown_alert.cpython-310.pyc
+[5.725s] running install_data
+[5.726s] running install_egg_info
+[5.736s] removing '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert-0.0.0-py3.10.egg-info' (and everything under it)
+[5.737s] Copying ../../build/falldown_alert/falldown_alert.egg-info to /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages/falldown_alert-0.0.0-py3.10.egg-info
+[5.742s] running install_scripts
+[5.864s] Installing falldown_detector script to /home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/falldown_alert
+[5.865s] writing list of installed files to '/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/install.log'
+[6.072s] Invoked command in '/home/sunrise/jianye_dev/falldown_ws/src/falldown_alert' returned '0': PYTHONPATH=/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/falldown_alert build --build-base /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build install --record /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/install.log --single-version-externally-managed install_data

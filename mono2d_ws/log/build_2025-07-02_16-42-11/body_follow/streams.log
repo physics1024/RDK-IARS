@@ -1,0 +1,69 @@
+[0.050s] Invoking command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/jianye_dev/mono2d_ws/src/body_follow -DCMAKE_INSTALL_PREFIX=/home/sunrise/jianye_dev/mono2d_ws/install/body_follow
+[0.558s] -- The C compiler identification is GNU 11.2.0
+[1.149s] -- The CXX compiler identification is GNU 11.2.0
+[1.200s] -- Detecting C compiler ABI info
+[1.578s] -- Detecting C compiler ABI info - done
+[1.652s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.654s] -- Detecting C compile features
+[1.657s] -- Detecting C compile features - done
+[1.676s] -- Detecting CXX compiler ABI info
+[2.111s] -- Detecting CXX compiler ABI info - done
+[2.183s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.185s] -- Detecting CXX compile features
+[2.187s] -- Detecting CXX compile features - done
+[2.204s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.254s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.019s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[4.312s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.352s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.416s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.508s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.627s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.955s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.979s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.467s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.606s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.797s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.860s] -- Looking for pthread.h
+[6.266s] -- Looking for pthread.h - found
+[6.268s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.659s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.666s] -- Found Threads: TRUE  
+[7.081s] -- Found ai_msgs: 2.0.1 (/opt/tros/humble/share/ai_msgs/cmake)
+[7.441s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.999s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.999s] -- Configured cppcheck include dirs: 
+[8.000s] -- Configured cppcheck exclude dirs and/or files: 
+[8.004s] -- Added test 'lint_cmake' to check CMake code style
+[8.011s] -- Added test 'uncrustify' to check C / C++ code style
+[8.012s] -- Configured uncrustify additional arguments: 
+[8.015s] -- Added test 'xmllint' to check XML markup files
+[8.024s] -- Configuring done
+[8.077s] -- Generating done
+[8.098s] -- Build files have been written to: /home/sunrise/jianye_dev/mono2d_ws/build/body_follow
+[8.160s] Invoked command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/jianye_dev/mono2d_ws/src/body_follow -DCMAKE_INSTALL_PREFIX=/home/sunrise/jianye_dev/mono2d_ws/install/body_follow
+[8.179s] Invoking command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/mono2d_ws/build/body_follow -- -j8 -l8
+[8.426s] [ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+[58.676s] [100%] [32m[1mLinking CXX executable body_follow[0m
+[62.116s] [100%] Built target body_follow
+[62.186s] Invoked command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/jianye_dev/mono2d_ws/build/body_follow -- -j8 -l8
+[62.246s] Invoking command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/jianye_dev/mono2d_ws/build/body_follow
+[62.282s] -- Install configuration: ""
+[62.283s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/lib/body_follow/body_follow
+[62.306s] -- Set runtime path of "/home/sunrise/jianye_dev/mono2d_ws/install/body_follow/lib/body_follow/body_follow" to ""
+[62.307s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/package_run_dependencies/body_follow
+[62.307s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/parent_prefix_path/body_follow
+[62.308s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/ament_prefix_path.sh
+[62.309s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/ament_prefix_path.dsv
+[62.309s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/path.sh
+[62.310s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/path.dsv
+[62.310s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.bash
+[62.311s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.sh
+[62.311s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.zsh
+[62.312s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.dsv
+[62.312s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/package.dsv
+[62.313s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/packages/body_follow
+[62.314s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/cmake/body_followConfig.cmake
+[62.315s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/cmake/body_followConfig-version.cmake
+[62.315s] -- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/package.xml
+[62.325s] Invoked command in '/home/sunrise/jianye_dev/mono2d_ws/build/body_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/vlm:/userdata/dev_ws/install/qr_code_detection:/userdata/dev_ws/install/origincar_capimage:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/jianye_dev/mono2d_ws/build/body_follow

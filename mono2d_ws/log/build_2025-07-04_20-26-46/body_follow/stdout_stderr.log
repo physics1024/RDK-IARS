@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target body_follow[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/body_follow.dir/src/body_follow.cpp.o[0m
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:[m[K In member function ‘[01m[Kvoid BodyRoiSubscriber::topic_callback(ai_msgs::msg::PerceptionTargets_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:63:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   63 |         int [01;35m[Kx2[m[K = x1 + largest_roi.width;
+      |             [01;35m[K^~[m[K
+[01m[K/home/sunrise/jianye_dev/mono2d_ws/src/body_follow/src/body_follow.cpp:64:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   64 |         int [01;35m[Ky2[m[K = y1 + largest_roi.height;
+      |             [01;35m[K^~[m[K
+[100%] [32m[1mLinking CXX executable body_follow[0m
+[100%] Built target body_follow
+-- Install configuration: ""
+-- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/lib/body_follow/body_follow
+-- Set runtime path of "/home/sunrise/jianye_dev/mono2d_ws/install/body_follow/lib/body_follow/body_follow" to ""
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/package_run_dependencies/body_follow
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/parent_prefix_path/body_follow
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/ament_prefix_path.sh
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/path.sh
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/environment/path.dsv
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.bash
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.sh
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.zsh
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/local_setup.dsv
+-- Installing: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/package.dsv
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/ament_index/resource_index/packages/body_follow
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/cmake/body_followConfig.cmake
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/cmake/body_followConfig-version.cmake
+-- Up-to-date: /home/sunrise/jianye_dev/mono2d_ws/install/body_follow/share/body_follow/package.xml

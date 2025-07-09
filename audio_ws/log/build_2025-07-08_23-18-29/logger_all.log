@@ -1,0 +1,145 @@
+[0.777s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.777s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa64f14b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa668b250>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa668b250>>)
+[2.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.132s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sunrise/jianye_dev/audio_ws'
+[2.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.216s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.216s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.216s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.217s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[2.217s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[2.218s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[2.218s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[2.218s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[2.218s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[2.219s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[2.219s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[2.219s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[2.220s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[2.220s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[2.220s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[2.220s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.222s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.222s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.222s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.223s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_audio) by extensions ['ignore', 'ignore_ament_install']
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_audio) by extension 'ignore'
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_audio) by extension 'ignore_ament_install'
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_audio) by extensions ['colcon_pkg']
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_audio) by extension 'colcon_pkg'
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_audio) by extensions ['colcon_meta']
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_audio) by extension 'colcon_meta'
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_audio) by extensions ['ros']
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_audio) by extension 'ros'
+[2.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_audio' with type 'ros.ament_python' and name 'my_audio'
+[2.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.409s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/sunrise/jianye_dev/audio_ws/install
+[2.412s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/sunrise/jianye_dev/rplidar_ws/install
+[2.417s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /userdata/dev_ws/install
+[2.421s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 58 installed packages in /opt/tros/humble
+[2.507s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 261 installed packages in /opt/ros/humble
+[2.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.814s] Level 5:colcon.colcon_core.verb:set package 'my_audio' build argument 'cmake_args' from command line to 'None'
+[2.815s] Level 5:colcon.colcon_core.verb:set package 'my_audio' build argument 'cmake_target' from command line to 'None'
+[2.815s] Level 5:colcon.colcon_core.verb:set package 'my_audio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.815s] Level 5:colcon.colcon_core.verb:set package 'my_audio' build argument 'cmake_clean_cache' from command line to 'False'
+[2.816s] Level 5:colcon.colcon_core.verb:set package 'my_audio' build argument 'cmake_clean_first' from command line to 'False'
+[2.816s] Level 5:colcon.colcon_core.verb:set package 'my_audio' build argument 'cmake_force_configure' from command line to 'False'
+[2.816s] Level 5:colcon.colcon_core.verb:set package 'my_audio' build argument 'ament_cmake_args' from command line to 'None'
+[2.816s] Level 5:colcon.colcon_core.verb:set package 'my_audio' build argument 'catkin_cmake_args' from command line to 'None'
+[2.816s] Level 5:colcon.colcon_core.verb:set package 'my_audio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.817s] DEBUG:colcon.colcon_core.verb:Building package 'my_audio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/jianye_dev/audio_ws/build/my_audio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/jianye_dev/audio_ws/install/my_audio', 'merge_install': False, 'path': '/home/sunrise/jianye_dev/audio_ws/src/my_audio', 'symlink_install': False, 'test_result_base': None}
+[2.818s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.825s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sunrise/jianye_dev/audio_ws/src/my_audio' with build type 'ament_python'
+[2.826s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_audio', 'ament_prefix_path')
+[2.844s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/hook/ament_prefix_path.ps1'
+[2.850s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/hook/ament_prefix_path.dsv'
+[2.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/hook/ament_prefix_path.sh'
+[2.859s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.860s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.792s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sunrise/jianye_dev/audio_ws/src/my_audio'
+[4.795s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.796s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/jianye_dev/audio_ws/src/my_audio': PYTHONPATH=/home/sunrise/jianye_dev/audio_ws/build/my_audio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_audio build --build-base /home/sunrise/jianye_dev/audio_ws/build/my_audio/build install --record /home/sunrise/jianye_dev/audio_ws/build/my_audio/install.log --single-version-externally-managed install_data
+[9.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/jianye_dev/audio_ws/src/my_audio' returned '0': PYTHONPATH=/home/sunrise/jianye_dev/audio_ws/build/my_audio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_audio build --build-base /home/sunrise/jianye_dev/audio_ws/build/my_audio/build install --record /home/sunrise/jianye_dev/audio_ws/build/my_audio/install.log --single-version-externally-managed install_data
+[9.679s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/audio_ws/install/my_audio' for CMake module files
+[9.686s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/audio_ws/install/my_audio' for CMake config files
+[9.693s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/audio_ws/install/my_audio/lib'
+[9.695s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/audio_ws/install/my_audio/bin'
+[9.696s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/pkgconfig/my_audio.pc'
+[9.699s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/audio_ws/install/my_audio/lib/python3.10/site-packages'
+[9.700s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_audio', 'pythonpath')
+[9.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/hook/pythonpath.ps1'
+[9.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/hook/pythonpath.dsv'
+[9.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/hook/pythonpath.sh'
+[9.712s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/audio_ws/install/my_audio/bin'
+[9.712s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_audio)
+[9.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/package.ps1'
+[9.721s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/package.dsv'
+[9.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/package.sh'
+[9.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/package.bash'
+[9.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/my_audio/package.zsh'
+[9.746s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/jianye_dev/audio_ws/install/my_audio/share/colcon-core/packages/my_audio)
+[9.748s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.749s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.749s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.750s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.792s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[9.793s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.794s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.794s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.825s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.828s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/audio_ws/install/local_setup.ps1'
+[9.836s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/jianye_dev/audio_ws/install/_local_setup_util_ps1.py'
+[9.849s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/audio_ws/install/setup.ps1'
+[9.862s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/audio_ws/install/local_setup.sh'
+[9.867s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/jianye_dev/audio_ws/install/_local_setup_util_sh.py'
+[9.871s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/audio_ws/install/setup.sh'
+[9.885s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/audio_ws/install/local_setup.bash'
+[9.889s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/audio_ws/install/setup.bash'
+[9.901s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/audio_ws/install/local_setup.zsh'
+[9.905s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/audio_ws/install/setup.zsh'

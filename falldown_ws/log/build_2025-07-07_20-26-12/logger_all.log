@@ -1,0 +1,145 @@
+[0.644s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.645s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff869614e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff86afb280>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff86afb280>>)
+[1.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.766s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.767s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sunrise/jianye_dev/falldown_ws'
+[1.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.769s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.770s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.770s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.841s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.841s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.855s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.855s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.855s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/falldown_alert) by extensions ['ignore', 'ignore_ament_install']
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/falldown_alert) by extension 'ignore'
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/falldown_alert) by extension 'ignore_ament_install'
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/falldown_alert) by extensions ['colcon_pkg']
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/falldown_alert) by extension 'colcon_pkg'
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/falldown_alert) by extensions ['colcon_meta']
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/falldown_alert) by extension 'colcon_meta'
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/falldown_alert) by extensions ['ros']
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/falldown_alert) by extension 'ros'
+[1.875s] DEBUG:colcon.colcon_core.package_identification:Package 'src/falldown_alert' with type 'ros.ament_python' and name 'falldown_alert'
+[1.875s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.876s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.876s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.876s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.876s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.001s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.001s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.016s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/sunrise/jianye_dev/falldown_ws/install
+[2.019s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/sunrise/jianye_dev/rplidar_ws/install
+[2.024s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /userdata/dev_ws/install
+[2.027s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 58 installed packages in /opt/tros/humble
+[2.115s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 261 installed packages in /opt/ros/humble
+[2.126s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.397s] Level 5:colcon.colcon_core.verb:set package 'falldown_alert' build argument 'cmake_args' from command line to 'None'
+[2.397s] Level 5:colcon.colcon_core.verb:set package 'falldown_alert' build argument 'cmake_target' from command line to 'None'
+[2.397s] Level 5:colcon.colcon_core.verb:set package 'falldown_alert' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.398s] Level 5:colcon.colcon_core.verb:set package 'falldown_alert' build argument 'cmake_clean_cache' from command line to 'False'
+[2.398s] Level 5:colcon.colcon_core.verb:set package 'falldown_alert' build argument 'cmake_clean_first' from command line to 'False'
+[2.398s] Level 5:colcon.colcon_core.verb:set package 'falldown_alert' build argument 'cmake_force_configure' from command line to 'False'
+[2.398s] Level 5:colcon.colcon_core.verb:set package 'falldown_alert' build argument 'ament_cmake_args' from command line to 'None'
+[2.398s] Level 5:colcon.colcon_core.verb:set package 'falldown_alert' build argument 'catkin_cmake_args' from command line to 'None'
+[2.399s] Level 5:colcon.colcon_core.verb:set package 'falldown_alert' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.399s] DEBUG:colcon.colcon_core.verb:Building package 'falldown_alert' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert', 'merge_install': False, 'path': '/home/sunrise/jianye_dev/falldown_ws/src/falldown_alert', 'symlink_install': False, 'test_result_base': None}
+[2.400s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.405s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.406s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sunrise/jianye_dev/falldown_ws/src/falldown_alert' with build type 'ament_python'
+[2.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('falldown_alert', 'ament_prefix_path')
+[2.419s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/hook/ament_prefix_path.ps1'
+[2.425s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/hook/ament_prefix_path.dsv'
+[2.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/hook/ament_prefix_path.sh'
+[2.434s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.434s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.219s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sunrise/jianye_dev/falldown_ws/src/falldown_alert'
+[4.221s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.221s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sunrise/jianye_dev/falldown_ws/src/falldown_alert': PYTHONPATH=/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/falldown_alert build --build-base /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build install --record /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/install.log --single-version-externally-managed install_data
+[8.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sunrise/jianye_dev/falldown_ws/src/falldown_alert' returned '0': PYTHONPATH=/home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/falldown_alert build --build-base /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/build install --record /home/sunrise/jianye_dev/falldown_ws/build/falldown_alert/install.log --single-version-externally-managed install_data
+[8.888s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert' for CMake module files
+[8.895s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert' for CMake config files
+[8.902s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib'
+[8.904s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/bin'
+[8.905s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/pkgconfig/falldown_alert.pc'
+[8.909s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/lib/python3.10/site-packages'
+[8.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('falldown_alert', 'pythonpath')
+[8.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/hook/pythonpath.ps1'
+[8.918s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/hook/pythonpath.dsv'
+[8.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/hook/pythonpath.sh'
+[8.926s] Level 1:colcon.colcon_core.environment:checking '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/bin'
+[8.927s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(falldown_alert)
+[8.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/package.ps1'
+[8.937s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/package.dsv'
+[8.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/package.sh'
+[8.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/package.bash'
+[8.955s] INFO:colcon.colcon_core.shell:Creating package script '/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/falldown_alert/package.zsh'
+[8.961s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sunrise/jianye_dev/falldown_ws/install/falldown_alert/share/colcon-core/packages/falldown_alert)
+[8.963s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.965s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.965s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.966s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.994s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[8.995s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.995s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.996s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.016s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.018s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/falldown_ws/install/local_setup.ps1'
+[9.024s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/jianye_dev/falldown_ws/install/_local_setup_util_ps1.py'
+[9.034s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/falldown_ws/install/setup.ps1'
+[9.044s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/falldown_ws/install/local_setup.sh'
+[9.048s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sunrise/jianye_dev/falldown_ws/install/_local_setup_util_sh.py'
+[9.052s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/falldown_ws/install/setup.sh'
+[9.062s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/falldown_ws/install/local_setup.bash'
+[9.066s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/falldown_ws/install/setup.bash'
+[9.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sunrise/jianye_dev/falldown_ws/install/local_setup.zsh'
+[9.078s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sunrise/jianye_dev/falldown_ws/install/setup.zsh'

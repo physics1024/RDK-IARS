@@ -1,0 +1,24 @@
+[4.189s] Invoking command in '/home/sunrise/jianye_dev/llm_ws/src/tts_receive': PYTHONPATH=/home/sunrise/jianye_dev/llm_ws/build/tts_receive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tts_receive build --build-base /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build install --record /home/sunrise/jianye_dev/llm_ws/build/tts_receive/install.log --single-version-externally-managed install_data
+[5.822s] running egg_info
+[5.827s] writing ../../build/tts_receive/tts_receive.egg-info/PKG-INFO
+[5.828s] writing dependency_links to ../../build/tts_receive/tts_receive.egg-info/dependency_links.txt
+[5.829s] writing entry points to ../../build/tts_receive/tts_receive.egg-info/entry_points.txt
+[5.830s] writing requirements to ../../build/tts_receive/tts_receive.egg-info/requires.txt
+[5.830s] writing top-level names to ../../build/tts_receive/tts_receive.egg-info/top_level.txt
+[5.840s] reading manifest file '../../build/tts_receive/tts_receive.egg-info/SOURCES.txt'
+[5.845s] writing manifest file '../../build/tts_receive/tts_receive.egg-info/SOURCES.txt'
+[5.846s] running build
+[5.847s] running build_py
+[5.847s] copying tts_receive/tts_receive.py -> /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib/tts_receive
+[5.848s] running install
+[5.849s] running install_lib
+[5.854s] copying /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build/lib/tts_receive/tts_receive.py -> /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive
+[5.857s] byte-compiling /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive/tts_receive.py to tts_receive.cpython-310.pyc
+[5.861s] running install_data
+[5.862s] running install_egg_info
+[5.872s] removing '/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive-0.0.0-py3.10.egg-info' (and everything under it)
+[5.874s] Copying ../../build/tts_receive/tts_receive.egg-info to /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages/tts_receive-0.0.0-py3.10.egg-info
+[5.878s] running install_scripts
+[6.000s] Installing tts_receive script to /home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/tts_receive
+[6.002s] writing list of installed files to '/home/sunrise/jianye_dev/llm_ws/build/tts_receive/install.log'
+[6.209s] Invoked command in '/home/sunrise/jianye_dev/llm_ws/src/tts_receive' returned '0': PYTHONPATH=/home/sunrise/jianye_dev/llm_ws/build/tts_receive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/jianye_dev/llm_ws/install/tts_receive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tts_receive build --build-base /home/sunrise/jianye_dev/llm_ws/build/tts_receive/build install --record /home/sunrise/jianye_dev/llm_ws/build/tts_receive/install.log --single-version-externally-managed install_data
