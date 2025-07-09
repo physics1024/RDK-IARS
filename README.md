@@ -1,84 +1,83 @@
-# RDK - IARS
+# RDK - IARS (Intelligent Accompaniment Robot System)
 
-## 1\. 项目概述
+## 1. Project Overview
 
-### 1.1 功能与特性
+### 1.1 Functions and Features
 
-**本系统基于RDK X5平台，具备以下核心功能：**
-- **智能跌倒检测**：通过姿态识别算法实现跌倒识别，支持语音确认与远程紧急提醒
-- **精准用药管理**：搭载旋转式智能药盒，结合云端用药计划录入与语音提醒
-- **AI健康助手**：集成大语言模型提供健康问答、医疗咨询与语音陪伴服务
-- **自主导航能力**：完成独立地图构建，实现定点导航与自主环境巡逻
-- **远程监护平台**：通过网页端实现远程控制、视频监控、语音互动与用药计划调整
+**This system is based on the RDK X5 platform and includes the following core functions:**
+- **Intelligent Fall Detection**: Implements fall detection through pose recognition algorithms, supporting voice confirmation and remote emergency alerts.
+- **Precise Medication Management**: Equipped with a rotary smart pillbox, integrated with cloud-based medication schedule input and voice reminders.
+- **AI Health Assistant**: Integrates a Large Language Model (LLM) to provide health Q&A, medical consultation, and voice companionship services.
+- **Autonomous Navigation Capability**: Completes independent map building, enabling point-to-point navigation and autonomous environmental patrols.
+- **Remote Monitoring Platform**: Allows for remote control, video surveillance, voice interaction, and medication schedule adjustments via a web interface.
 
-系统突破传统陪护设备的固定场景限制，实现主动式、移动化智能陪护解决方案。
-### 1.2 应用领域
+The system overcomes the limitations of traditional, stationary companion devices to deliver an active, mobile, and intelligent care solution.
 
-- **核心场景**：独居老人居家陪护，解决跌倒应急、用药管理、健康咨询等核心需求
-- **扩展应用**：儿童安全监护、残障人士日常辅助、康复陪护等场景
-- **社会价值**：助力构建智慧养老生态，推动"AI+养老"产业化落地，缓解家庭照护压力
+### 1.2 Application Areas
 
-### 1.3 主要技术特点
+- **Core Scenario**: In-home care for elderly individuals living alone, addressing key needs such as fall emergencies, medication management, and health consultations.
+- **Extended Applications**: Child safety monitoring, daily assistance for individuals with disabilities, and rehabilitation companionship.
+- **Social Value**: Contributes to building a smart elderly care ecosystem, promotes the industrialization of "AI + Elderly Care," and alleviates family caregiving burdens.
 
-- **多模态技术融合**：集成人体姿态识别视觉模型、大语言模型、语音识别与合成技术
-- **高效硬件平台**：采用地瓜机器人RDK X5平台与TogetheROS框架，实现板端高效算力支撑
-- **自主导航系统**：基于cartographer算法实现环境建图，navigation2框架保障导航精度
-- **远程交互体系**：低延迟视频流传输与远程控制实现家中状态实时监控
-- **一体化设计**：通过"硬件+算法+软件平台"整合，构建感知-决策-执行的完整闭环系统
+### 1.3 Key Technical Features
 
-### 1.4 主要性能指标
+- **Multimodal Technology Integration**: Integrates a human pose recognition visual model, a Large Language Model, and speech recognition & synthesis technologies.
+- **High-Efficiency Hardware Platform**: Utilizes the RDK X5 platform and the TogetheROS framework to provide efficient on-board computing power.
+- **Autonomous Navigation System**: Employs the Cartographer algorithm for environmental mapping and the Navigation2 framework to ensure navigation precision.
+- **Remote Interaction System**: Achieves real-time monitoring of the home environment through low-latency video streaming and remote control.
+- **Integrated Design**: Builds a complete perception-decision-execution closed-loop system by integrating "Hardware + Algorithms + Software Platform."
 
-| 指标项 | 参数 |
-| :---: | :---: |
-| 跌倒检测准确率 | ≥97% |
-| 跌倒检测误报率 | ≤3% |
-| 人体跟随成功率 | ≥95% |
-| 导航到点误差 | ≤0.1m |
-| 药盒提醒时间误差	| ≤500ms |
-| 语音交互延迟	 | ≤1s |
-| 远程视频传输延迟	| ≤400ms |
+### 1.4 Key Performance Indicators
 
-### 1.5 主要创新点
+|               Metric               | Parameter |
+| :--------------------------------: | :-------: |
+|      Fall Detection Accuracy       |   ≥97%    |
+| Fall Detection False Positive Rate |    ≤3%    |
+|    Human Following Success Rate    |   ≥95%    |
+|     Navigation Waypoint Error      |   ≤0.1m   |
+|    Pillbox Reminder Time Error     |  ≤500ms   |
+|     Voice Interaction Latency      |    ≤1s    |
+| Remote Video Transmission Latency  |  ≤400ms   |
 
-- **移动化智能陪护**：突破固定设备限制，实现自主移动巡视与主动风险监测
-- **AI深度集成**：融合视觉、语言模型、SLAM等技术，形成完整智能决策系统
-- **情感交互设计**：通过语音识别与合成技术，提供人性化健康咨询与日常陪伴
-- **边云协同架构**：板端快速响应与云端深度处理结合，平衡效率与功能需求
-- **管理闭环设计**：打通用药提醒、状态监测、家属管理的全流程服务链路
+### 1.5 Key Innovations
 
-## 2\. 安装与部署
-### 2.1 硬件要求
-- RDK X5开发平台
-- 云台摄像头（需自行适配）
-- 旋转式药盒模块（定制设计）
-- USB麦克风与扬声器
-- 外置网卡（可选）
+- **Mobile Intelligent Companionship**: Breaks the constraints of fixed devices to achieve autonomous mobile patrols and proactive risk monitoring.
+- **Deep AI Integration**: Fuses computer vision, language models, SLAM, and other technologies to form a complete intelligent decision-making system.
+- **Affective Interaction Design**: Provides human-like health consultations and daily companionship through speech recognition and synthesis.
+- **Edge-Cloud Collaborative Architecture**: Balances efficiency and functional requirements by combining rapid on-board response with in-depth cloud-based processing.
+- **Closed-Loop Management Design**: Establishes a full-process service chain covering medication reminders, status monitoring, and family member management.
 
-### 2.2 软件要求
+## 2. Installation and Deployment
+### 2.1 Hardware Requirements
+- RDK X5 Development Platform
+- PTZ Camera (requires custom adaptation)
+- Rotary Pillbox Module (custom design)
+- USB Microphone and Speaker
+- External Network Card (optional)
 
-系统需为**RDK官方Ubuntu 22.04**镜像，包含官方**Together ROS**系统与官方**ROS Humble**系统。
-系统需要配置好**官方ROS Bridge**与**ALSA音频驱动**。有关依赖仍在整理中。
+### 2.2 Software Requirements
 
-### 2.3 单模块部署
+The required system is the **official RDK Ubuntu 22.04** image, which includes the official **Together ROS** system and the official **ROS Humble** system.
+The system must have the **official ROS Bridge** and **ALSA audio drivers** configured. A full list of dependencies is still being compiled.
 
-每个文件夹均对应一个具体功能，运行请进入当前文件夹执行`run.sh`。
-WWW文件夹下是后端服务，需要自行通过[frp](https://https://github.com/fatedier/frp "frp")等内网穿透工具暴露至广域网。
-阿里云百炼大模型调用需要API KEY，请参考[百炼大模型介绍](https://help.aliyun.com/zh/model-studio/realtime "百炼大模型介绍")进行部署。
+### 2.3 Single-Module Deployment
 
-## 3\. 开发与贡献
+Each folder corresponds to a specific function. To run, navigate to the respective folder and execute `run.sh`.
+The `WWW` folder contains the back-end service, which needs to be exposed to the public internet using an intranet penetration tool like [frp](https://github.com/fatedier/frp).
+Calling the Alibaba Cloud Bailian Large Language Model requires an API KEY. Please refer to the [Bailian LLM Introduction](https://help.aliyun.com/zh/model-studio/realtime) for deployment.
 
-欢迎通过以下方式参与项目开发：
-1. 提交Issue报告问题或建议
-2. Fork仓库并提交Pull Request
-3. 完善项目文档与测试用例
+## 3. Development and Contribution
 
-## 4\. 许可协议
+You are welcome to contribute to the project in the following ways:
+1. Submit an Issue to report problems or make suggestions.
+2. Fork the repository and submit a Pull Request.
+3. Improve the project documentation and test cases.
 
-本项目采用 **GNU GPL v3.0** 开源协议，详细内容请参阅 LICENSE 文件。
+## 4. License
 
+This project is licensed under the **GNU GPL v3.0** open-source license. For details, please see the LICENSE file.
 
 ------------
-智能守护，温情相伴 - 让科技温暖每一刻
+Intelligent Guardian, Warm Companionship - Bringing Warmth to Every Moment with Technology
 
-© 2025 同心智护项目组
-
+© 2025 Tongxin Zhihu Project Team
